@@ -29,8 +29,8 @@ export const Footer = () => {
             <div className="col-lg-3 col-7 order-2">
               <ul className={styles.link_group}>
                 <li className={styles.link}>Services</li>
-                {services.map((services) => (
-                  <li className={styles.link}>{services.title}</li>
+                {services.map((service, index) => (
+                  <li className={styles.link} key={index}>{service.title}</li>
                 ))}
               </ul>
             </div>

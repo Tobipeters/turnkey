@@ -29,8 +29,8 @@ export const NavBar = () => {
         </Link>
         
         <ul className={styles.menu_group}>
-          {menuLists.map((menu: any) => (
-            <li className={styles.menu_list}>
+          {menuLists.map((menu: any, id: number) => (
+            <li className={styles.menu_list} key={id}>
               <Link href={menu.link}>{menu.name}</Link>
             </li>
           ))}
@@ -55,8 +55,8 @@ export const NavBar = () => {
               {service?.title} <DropDownIcon />
             </Link>
             <ul className={styles.sub_service_group}>
-              {service.sub_services.map((sub_service: ISubService) => (
-                <li>
+              {service.sub_services.map((sub_service: ISubService, id: number) => (
+                <li key={id}>
                   <Link href={sub_service.link}>{sub_service.name}</Link>
                 </li>
               ))}
