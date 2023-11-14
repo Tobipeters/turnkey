@@ -114,8 +114,8 @@ export default function Home() {
             <h3 className={styles.title}>Our clients</h3>
 
             <div className="row">
-              {[1, 2, 3].map(() => (
-                <div className="col-lg-4">
+              {[1, 2, 3].map((id: number) => (
+                <div className="col-lg-4" key={id}>
                   <ClientCard />
                 </div>
               ))}
