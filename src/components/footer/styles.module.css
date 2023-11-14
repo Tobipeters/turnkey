@@ -1,0 +1,127 @@
+.footer {
+  background: #e8f6fd;
+  padding: 3.37rem 0 0;
+}
+
+.text_holder {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.text_holder .title {
+  color: #000000;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147.4%; /* 4.422rem */
+  text-transform: capitalize;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.link_group {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link_group .link:first-child {
+  color: #000;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147.4%; /* 1.8425rem */
+  margin-bottom: 0.5rem;
+}
+
+.link_group .link {
+  padding: 0.19rem 0;
+  color: #535353;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 147.4%; /* 1.474rem */
+}
+
+.bottom_notes {
+  border-top: 1px solid #989898;
+  padding: 1rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.85rem;
+}
+
+.bottom_notes .copy_right {
+  color: #2d2d2d;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.0225rem;
+}
+
+.icon_container {
+  display: flex;
+  gap: 0 1.3rem;
+  align-items: center;
+}
+
+.icon_holder {
+  background-color: var(--turnkey-primary-color);
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.icon_holder:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 767px) {
+  .text_holder {
+    max-width: 100%;
+  }
+
+  .text_holder .title {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .link_group {
+    margin-bottom: 2.5rem;
+  }
+
+  .link_group .link:first-child {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .link_group .link {
+    padding: 0.19rem 0;
+    font-size: 0.875rem;
+  }
+
+  .bottom_notes {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem 0;
+    margin-top: 1.5rem;
+  }
+
+  .bottom_notes .copy_right {
+    font-size: 0.75rem;
+  }
+
+  .icon_holder {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}

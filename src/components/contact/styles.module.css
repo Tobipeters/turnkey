@@ -1,0 +1,189 @@
+.contact_section {
+  padding: 5.62rem 0 5.31rem;
+}
+
+.banner {
+  background-color: var(--turnkey-primary-color);
+  border-radius: 2rem;
+  border: 1px solid #d9d9d9;
+  padding: 3.55rem;
+  position: relative;
+  margin-bottom: 5.62rem;
+}
+
+.banner .text_holder {
+  width: 60%;
+}
+
+.banner .text_holder .title,
+.banner .text_holder .details {
+  color: #ffffff;
+  font-style: normal;
+  line-height: normal;
+}
+
+.banner .text_holder .title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 6.25rem;
+}
+
+.banner .text_holder .details {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.banner_img {
+  background-image: url("../../assets/contact_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* height: 100%; */
+  width: 35%;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.contact_form_section .title {
+  color: #2d2d2d;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.form_section {
+  width: 95%;
+}
+
+.form_section .details {
+  color: #000;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.form_section .label {
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.form_section .form_check {
+  margin-bottom: 1.5rem;
+  width: 85%;
+}
+
+.form_section .form_check label {
+  color: #7d7d7d;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form_section .form_check .form-check-input {
+  border-color: #9a9a9a !important;
+}
+
+.info_container .name {
+  color: #000;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0.75rem;
+}
+
+.info_container .value {
+  color: #2d2d2d;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: 167.645%;
+  letter-spacing: 0.02rem;
+}
+
+
+@media screen and (max-width:767.9px) {
+  .contact_section {
+    padding: 3.5rem 0 4rem;
+  }
+  
+  .banner {
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 3.5rem;
+  }
+  
+  .banner .text_holder {
+    width: 100%;
+  }
+  
+  .banner .text_holder .title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+  }
+  
+  .banner .text_holder .details {
+    font-size: 3.5rem;
+  }
+  
+  .banner_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 35%;
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  
+  .contact_form_section .title {
+    font-size: 2.15rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form_section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .form_section .details {
+    font-size: 1.25rem;
+    margin-bottom: 1.15rem;
+  }
+  
+  .form_section .label {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form_section .form_check {
+    margin-bottom: 1.5rem;
+    width: 95%;
+  }
+  
+  .form_section .form_check label {
+    font-size: 0.875rem;
+  }
+  
+  .info_container .name {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .info_container .value {
+    font-size: 0.875rem;
+  }
+}

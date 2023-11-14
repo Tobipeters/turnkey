@@ -1,0 +1,83 @@
+.card_container {
+  border-radius: 0.5rem;
+  /* background-image: url("../../assets/turnkey-header-bg.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 36px 3px rgba(0, 0, 0, 0.06);
+  height: 26rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card_container::after {
+  content: " ";
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.77) 100%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 110%;
+  height: 50%;
+  transition: 0.5s all ease-in-out;
+}
+
+.card_container .text_holder {
+  padding: 0 3.6rem 2rem 1.94rem;
+  position: absolute;
+  bottom: -80px;
+  transition: 0.4s all ease-in-out;
+  z-index: 1;
+}
+
+.card_container .text_holder .title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 1.31rem;
+}
+
+.card_container .text_holder .details {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.card_container:hover .text_holder {
+  bottom: 0;
+}
+
+.card_container:hover::after {
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.669); */
+  /* background: linear-gradient(#00000000, #00000000); */
+}
+
+
+@media screen and (max-width: 767px) {
+  .card_container {
+    height: 20rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .card_container .text_holder {
+    padding: 0 2rem 2rem 2rem;
+  }
+  
+  .card_container .text_holder .title {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .card_container .text_holder .details {
+    font-size: 0.95rem;
+    margin-bottom: 2.25rem;
+  }
+
+}
