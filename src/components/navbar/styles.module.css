@@ -94,9 +94,143 @@
   opacity: 1;
 }
 
+.dropdown_icon_holder svg {
+  transition: 0.4s all ease-in-out;
+}
 
-@media screen and (max-width: 767px){
+.hide .dropdown_icon_holder svg {
+  transform: rotate(0deg);
+}
 
+.show .dropdown_icon_holder svg {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 991.9px) {
+  .nav_wrapper {
+    position: relative;
+  }
+
+  .mobile_nav_holder {
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .hide_mob_menu {
+    /* height: 0; */
+  }
+
+  .show_mob_menu {
+    max-height: 1000px;
+  }
+
+  .mobile_nav_holder .menu_group,
+  .mobile_nav_holder .services_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    border: none;
+  }
+
+  .mobile_nav_holder .menu_group,
+  .mobile_nav_holder .services_nav,
+  .btn_holder {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .mobile_nav_holder .menu_group li,
+  .mobile_nav_holder .services_nav li,
+  .btn_holder {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+  }
+
+  .mobile_nav_holder .services_nav li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mobile_nav_holder .sub_service_group li {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    font-weight: 400;
+  }
+
+  .mobile_nav_holder .sub_service_group li:first-child {
+    padding-top: 1.5rem;
+  }
+
+  .mobile_nav_holder .sub_service_group li:last-child {
+    padding-bottom: 0;
+  }
+
+  .mobile_nav_holder .sub_service_group {
+    position: unset;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .mobile_nav_holder .dropdown_icon_holder {
+    padding: 0.15rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .hide .sub_service_group {
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .show .sub_service_group {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .menu_icon_container .menu_icon
+  .menu_icon_container .close_menu_icon {
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .show_menu .menu_icon svg{
+    opacity: 0;
+  }
+
+  .show_menu .close_menu_icon svg{
+    opacity: 1;
+  }
+
+  .hide_menu .menu_icon svg{
+    opacity: 1;
+  }
+
+  .hide_menu .close_menu_icon svg{
+    opacity: 0;
+  }
+
+
+
+  .menu_icon_container svg {
+    cursor: pointer;
+    transition: 0.4 all ease-in-out;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .mobile_nav_holder .menu_group,
+  .mobile_nav_holder .services_nav,
+  .btn_holder {
+    max-width: 540px !important;
+  }
 }
 
 @keyframes fadeIn {

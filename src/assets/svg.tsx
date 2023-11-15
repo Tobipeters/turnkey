@@ -261,3 +261,68 @@ export const TwitterIcon = () => {
     </svg>
   );
 };
+
+export const MenuIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="43"
+      height="42"
+      viewBox="0 0 43 42"
+      fill="none"
+    >
+      <path
+        d="M5.37012 12.2983H36.8188"
+        stroke="#292D32"
+        stroke-width="3.05752"
+        stroke-linecap="round"
+      />
+      <path
+        d="M5.37012 21.0342H36.8188"
+        stroke="#292D32"
+        stroke-width="3.05752"
+        stroke-linecap="round"
+      />
+      <path
+        d="M5.37012 29.77H36.8188"
+        stroke="#292D32"
+        stroke-width="3.05752"
+        stroke-linecap="round"
+      />
+    </svg>
+  );
+};
+
+export const CloseMenuIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="35"
+      height="35"
+      viewBox="0 0 35 35"
+      fill="none"
+    >
+      <path
+        d="M13.1196 21.043L21.138 13.0247"
+        stroke="#292D32"
+        stroke-width="2.125"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21.138 21.043L13.1196 13.0247"
+        stroke="#292D32"
+        stroke-width="2.125"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12.8791 31.2005H21.3791C28.4624 31.2005 31.2957 28.3672 31.2957 21.2839V12.7839C31.2957 5.70052 28.4624 2.86719 21.3791 2.86719H12.8791C5.79574 2.86719 2.9624 5.70052 2.9624 12.7839V21.2839C2.9624 28.3672 5.79574 31.2005 12.8791 31.2005Z"
+        stroke="#292D32"
+        stroke-width="2.125"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};

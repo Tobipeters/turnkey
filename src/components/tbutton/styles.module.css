@@ -1,7 +1,5 @@
 /* Variables */
 
-
-
 .btn_default {
   color: #fff;
   font-size: 1.25rem;
@@ -20,7 +18,11 @@
   font-weight: 500;
 }
 
-.btn_primary{
+.full_width {
+  width: 100%;
+}
+
+.btn_primary {
   background-color: var(--turnkey-primary-color);
 }
 

@@ -6,6 +6,7 @@ export const TButton: React.FC<IProps> = ({
   size,
   mode = "primary",
   type = "button",
+  fullWidth,
 }) => {
   return (
     <button
@@ -13,6 +14,7 @@ export const TButton: React.FC<IProps> = ({
     ${styles.btn_default}
     ${size === "sm" && styles.btn_sm}
     ${mode === "primary" && styles.btn_primary}
+    ${fullWidth && styles.full_width}
   `}
       type={type}
     >
@@ -26,4 +28,5 @@ interface IProps {
   size?: "sm" | "md";
   mode?: "primary";
   type?: "button" | "submit";
+  fullWidth?: boolean;
 }
