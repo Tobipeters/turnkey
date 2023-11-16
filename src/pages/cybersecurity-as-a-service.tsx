@@ -1,4 +1,4 @@
-import styles from "@/styles/service.module.css";
+import styles from "./styles/service.module.css";
 import { Contact } from "@/components";
 import CybersecurityBgImg from "../assets/cybersecurity/cybersecurity-bg.jpeg";
 import ITGovernanceImg from "../assets/Mitigation.png";
@@ -47,7 +47,7 @@ export default function Cybersecurity() {
       value:
         "IT governance and risk management are crucial for aligning technology with business objectives, mitigating threats, ensuring compliance, and promoting cost efficiency",
     },
-  ];
+  ]; 
 
   return (
     <>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Outfit } from "next/font/google";
-import styles from "@/styles/home.module.css";
+import styles from "./styles/home.module.css";
 import {
   TButton,
   ServiceCard,

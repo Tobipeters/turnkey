@@ -13,14 +13,14 @@
       rgba(0, 0, 0, 0.65) 40.17%,
       rgba(0, 0, 0, 0) 104.56%
     ),
-    url("../assets/turnkey-header-bg.png");
+    url("../../assets/turnkey-header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5.1rem 0;
 }
 
 .header_bg .text_holder {
-  width: 80%;
+  width: 80%; 
 }
 
 .header_bg .text_holder .tag {
