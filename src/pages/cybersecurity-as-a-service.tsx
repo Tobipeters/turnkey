@@ -100,14 +100,14 @@ export default function Cybersecurity() {
               services. We offer expert vulnerability assessments, real-world
               penetration testing, and 24/7 monitoring to ensure your data
               remains secure in an evolving threat landscape. Safeguard your
-              organization's digital future with our trusted cybersecurity
+              organization&apos;s digital future with our trusted cybersecurity
               solutions
             </p>
           </div>
 
           <div className="row d-flex justify-content-center">
             {subServices.map((sub_service: any, id: number) => (
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-4 col-md-6" key={id}>
                 <div className={styles.ser_card}>
                   <Image
                     src={sub_service.icon}
