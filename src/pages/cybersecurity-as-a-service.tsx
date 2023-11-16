@@ -1,4 +1,4 @@
-import styles from "../styles/Service.module.css";
+import styles from "@/styles/service.module.css";
 import { Contact } from "@/components";
 import CybersecurityBgImg from "../assets/cybersecurity/cybersecurity-bg.jpeg";
 import ITGovernanceImg from "../assets/Mitigation.png";
