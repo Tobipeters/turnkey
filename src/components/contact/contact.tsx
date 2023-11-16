@@ -1,20 +1,23 @@
 import styles from "./styles.module.css";
 import { services } from "@/mock-data";
 import { TButton } from "..";
+import React from "react";
 
-export const Contact = () => {
+export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
   return (
-    <section className={styles.contact_section}>
+    <section className={styles.contact_section} id="contact_section">
       <div className="container">
-        <div className={styles.banner}>
-          <div className={styles.text_holder}>
-            <h3 className={styles.title}>Turnkey</h3>
-            <p className={styles.details}>Do you need help with coms</p>
-            {/* <p className={styles.details}>Are you in the market for staff</p>
+        {isBanner && (
+          <div className={styles.banner}>
+            <div className={styles.text_holder}>
+              <h3 className={styles.title}>Turnkey</h3>
+              <p className={styles.details}>Do you need help with coms</p>
+              {/* <p className={styles.details}>Are you in the market for staff</p>
             <p className={styles.details}>Would you want to be cybersafe</p> */}
+            </div>
+            <div className={styles.banner_img}></div>
           </div>
-          <div className={styles.banner_img}></div>
-        </div>
+        )}
 
         <div className={styles.contact_form_section}>
           <div className={styles.title}>Contact us</div>
@@ -115,3 +118,7 @@ export const Contact = () => {
     </section>
   );
 };
+
+interface IProps {
+  isBanner?: boolean;
+}

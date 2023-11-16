@@ -122,10 +122,6 @@
     transition: max-height 0.4s ease-in-out;
   }
 
-  .hide_mob_menu {
-    /* height: 0; */
-  }
-
   .show_mob_menu {
     max-height: 1000px;
   }

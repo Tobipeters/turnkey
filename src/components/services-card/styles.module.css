@@ -55,10 +55,30 @@
 
 .card_container:hover::after {
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.669); */
-  /* background: linear-gradient(#00000000, #00000000); */
 }
 
+@media screen and (max-width: 991.9px) {
+  .card_container {
+    height: 24rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .card_container .text_holder {
+    padding: 0 2.6rem 1.75rem 1.5rem;
+ 
+  }
+  
+  .card_container .text_holder .title {
+    font-size: 1.25rem;
+    margin-bottom: 1.15rem;
+  }
+  
+  .card_container .text_holder .details {
+    font-size: 1rem;
+    margin-bottom: 2.15rem;
+  }
+  
+}
 
 @media screen and (max-width: 767px) {
   .card_container {
@@ -67,17 +87,18 @@
   }
 
   .card_container .text_holder {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
   }
   
   .card_container .text_holder .title {
     font-size: 1.25rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
   
   .card_container .text_holder .details {
     font-size: 0.95rem;
-    margin-bottom: 2.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.35;
   }
 
 }

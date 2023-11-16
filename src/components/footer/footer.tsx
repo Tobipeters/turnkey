@@ -35,7 +35,7 @@ export const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-lg-3 col-7 order-md-3 order-4">
+            <div className="col-lg-3 col-md-5 col-7 order-md-3 order-4">
               <ul className={styles.link_group}>
                 <li className={styles.link}>Company Info</li>
                 <li className={styles.link}>tel. +1 204 952 3913</li>
@@ -44,7 +44,7 @@ export const Footer = () => {
               </ul>
             </div>
 
-            <div className="col-lg-2 col-5 order-md-4 order-3">
+            <div className="col-lg-2 col-md-7 col-5 order-md-4 order-3">
               <ul className={styles.link_group}>
                 <li className={styles.link}>Find us at</li>
                 <li className={styles.link}>Winnipeg Office</li>

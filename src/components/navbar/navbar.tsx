@@ -8,9 +8,11 @@ import { services } from "@/mock-data";
 import { IService, ISubService } from "@/mock-data/model";
 import React from "react";
 import { MenuIcon, CloseMenuIcon } from "@/assets/svg";
+import { useRouter } from "next/router";
 
 export const NavBar = () => {
   const tabletBreakpoint: number = 992;
+  const router = useRouter();
   const [showMenu, setShowMenu] = React.useState<boolean>(false);
   const [hoveredIndex, setHoveredIndex] = React.useState<number | null>(null);
   const menuLists = [
@@ -20,7 +22,7 @@ export const NavBar = () => {
     },
     {
       name: "About us",
-      link: "/about-us",
+      link: "/#about_section",
     },
   ];
 
@@ -33,16 +35,22 @@ export const NavBar = () => {
 
   const handleMenuToggle = () => setShowMenu(!showMenu);
 
+  const closeMenu = () => handleMenuToggle();
+
+  const goToContact = () => router.push("/#contact_section");
+
   const renderMainMenu = (is_btn: boolean = true) => {
     return (
       <ul className={styles.menu_group}>
         {menuLists.map((menu: any, id: number) => (
           <li className={styles.menu_list} key={id}>
-            <Link href={menu.link}>{menu.name}</Link>
+            <Link href={menu.link} onClick={closeMenu}>
+              {menu.name}
+            </Link>
           </li>
         ))}
 
-        {is_btn && <TButton size="sm" text="Contact us" />}
+        {is_btn && <TButton click={goToContact} size="sm" text="Contact us" />}
       </ul>
     );
   };
@@ -103,7 +111,9 @@ export const NavBar = () => {
                   }}
                 >
                   <div className="d-flex align-items-center gap-2">
-                    <Link href={service.link}>{service?.title}</Link>
+                    <Link href={service.link} onClick={closeMenu}>
+                      {service?.title}
+                    </Link>
                     <div
                       className={styles.dropdown_icon_holder}
                       onClick={() => {
@@ -136,7 +146,15 @@ export const NavBar = () => {
               ))}
             </ul>
             <div className={`${styles.btn_holder} d-lg-none`}>
-              <TButton fullWidth size="sm" text="Contact us" />
+              <TButton
+                click={() => {
+                  goToContact();
+                  closeMenu();
+                }}
+                fullWidth
+                size="sm"
+                text="Contact us"
+              />
             </div>
           </div>
         </div>

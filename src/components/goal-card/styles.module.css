@@ -37,6 +37,30 @@
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 991.9px) {
+  .goal_card {
+    padding: 2rem 1.75rem 2rem 2rem;
+    min-height: 385px;
+    margin-bottom: 1.75rem;
+  }
+
+  .img_holder {
+    margin-bottom: 3.5rem;
+    width: 7rem;
+    height: 6.5rem;
+  }
+
+  .text_holder .title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .text_holder .details {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .goal_card {
     margin-bottom: 2.5rem;
@@ -44,10 +68,10 @@
   }
 
   .img_holder {
-    margin-bottom: 5.6rem;
+    margin-bottom: 3.5rem;
 
-    width: 8.5rem;
-    height: 8rem;
+    width: 7.5rem;
+    height: 7rem;
   }
 
   .text_holder .title {

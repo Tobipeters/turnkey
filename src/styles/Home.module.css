@@ -126,6 +126,68 @@
   text-align: center;
 }
 
+@media screen and (max-width: 991.9px) {
+  .header_bg .text_holder {
+    width: 95%;
+  }
+
+  .header_bg .text_holder .tag {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.96rem;
+  }
+
+  .header_bg .text_holder .title {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  .header_bg .text_holder .details {
+    font-size: 1.15rem;
+  }
+
+  .partner_section {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .partner_section .sub_title {
+    font-size: 1.35rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .partners_container {
+    gap: 3rem 4rem;
+  }
+
+  .about_section {
+    padding: 5rem 0;
+  }
+
+  .about_section .text_holder .title {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about_section .text_holder .details {
+    color: #000000;
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .service_section,
+.goal_section,
+.client_section {
+  padding: 3rem 0 3.75rem;
+}
+
+.service_section .title,
+.goal_section .title,
+.client_section .title {
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+}
+
 @media screen and (max-width: 767.9px) {
   /* header section */
   .header_bg {
@@ -172,7 +234,7 @@
   }
 
   .about_section .text_holder .title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 1.25rem;
   }
 
@@ -193,7 +255,7 @@
   .service_section .title,
   .goal_section .title,
   .client_section .title {
-    font-size: 2.15rem;
+    font-size: 1.95rem;
     margin-bottom: 2.75rem;
   }
 }
