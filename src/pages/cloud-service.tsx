@@ -62,13 +62,13 @@ export default function CloudService() {
                   month plan. These easy-to-budget solutions offer significant
                   business value for our Small and Medium-sized (SMB) client
                   base.
-                  <br /> <br />A true "Cloud Office" solution is a reality for
+                  <br /> <br />A true &ldquo;Cloud Office&rdquo; solution is a reality for
                   businesses with adequate Internet and appropriate
                   redundancies. Many of our clients enjoy the benefits of a
                   complete business solution in a monthly payment instead of
                   upfront capital costs for a server. Clear Concepts specializes
                   in bringing enterprise-grade cloud solutions to an SMB market.
-                  Don't get lost in working with a national telecom that doesn't
+                  Don&quot;t get lost in working with a national telecom that doesn&quot;t
                   understand the needs of your business — contact Clear Concepts
                   and let us earn your business.
                 </p>

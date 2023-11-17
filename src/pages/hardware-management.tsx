@@ -12,7 +12,7 @@ import SecureIcon from "../assets/hardware/Secure shield (1).png";
 import SystemRepairImg from "../assets/hardware/system-repair-img.png";
 import HardwareRecyclingImg from "../assets/hardware/hardwaree-recycling-img.png";
 import DataRecoveryImg from "../assets/hardware/data-recovery-img.png";
-import DataDestructionImg from "../assets/hardware/data-destruction-img.png"
+import DataDestructionImg from "../assets/hardware/data-destruction-img.png";
 
 export default function HardwareMgt() {
   const subServices = [
@@ -126,7 +126,7 @@ export default function HardwareMgt() {
 
           <section className="row">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} me-lg-5`}>
                 <h5 className={styles.name}>
                   Desktop, Laptops, MacOS, Phones - Repairs
                 </h5>
@@ -225,7 +225,7 @@ export default function HardwareMgt() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} ms-lg-5`}>
                 <h5 className={styles.name}>Hardware Recycling and Disposal</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -307,7 +307,7 @@ export default function HardwareMgt() {
 
           <section className="row">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} me-lg-5`}>
                 <h5 className={styles.name}>Data Security and Recovery</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -404,7 +404,7 @@ export default function HardwareMgt() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} ms-lg-5`}>
                 <h5 className={styles.name}>Data Destruction</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -483,7 +483,6 @@ export default function HardwareMgt() {
               </div>
             </div>
           </section>
-
         </div>
       </main>
       <Contact isBanner={false} />
