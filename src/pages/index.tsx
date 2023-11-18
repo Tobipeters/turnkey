@@ -13,10 +13,15 @@ import VmwareLogo from "../assets/vmware-logo.svg";
 import AboutBg from "../assets/turnkey-about-bg.png";
 import { services, goals } from "@/mock-data";
 import { IService, IGoal } from "@/mock-data/model";
+import { useRouter } from "next/router";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter();
+
+  const goToServiceSection = () => router.push("/#service_section");
+
   return (
     <main className={`${styles.main} ${outfit.className}`}>
       <header className={styles.header_bg}>
@@ -34,7 +39,7 @@ export default function Home() {
               Solutions for a Secure and Thriving Digital Future
             </p>
 
-            <TButton text="Get started" />
+            <TButton click={goToServiceSection} text="Get started" />
           </div>
         </div>
       </header>
@@ -76,7 +81,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.service_section}>
+      <section className={styles.service_section} id="service_section">
         <div className="container">
           <h3 className={styles.title}>Our Exceptional Services</h3>
 
@@ -114,7 +119,7 @@ export default function Home() {
                 <ClientCard />
               </div>
             ))}
-          </div> 
+          </div>
         </div>
       </section>
 

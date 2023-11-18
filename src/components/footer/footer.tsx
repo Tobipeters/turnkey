@@ -2,8 +2,14 @@ import styles from "./styles.module.css";
 import { TButton } from "..";
 import { services } from "@/mock-data";
 import { FbIcon, IGIcon, LinkedInIcon, TwitterIcon } from "@/assets/svg";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export const Footer = () => {
+  const router = useRouter();
+
+  const goToServiceSection = () => router.push("/#service_section");
+
   return (
     <footer className={styles.footer}>
       <div className="container">
@@ -13,16 +19,25 @@ export const Footer = () => {
           </div>
 
           <div className="d-flex justify-content-center">
-            <TButton text="Get started" />
+            <TButton click={goToServiceSection} text="Get started" />
           </div>
 
           <div className="row mt-5 pt-4 d-flex justify-content-center">
             <div className="col-lg-2 col-5 order-1">
               <ul className={styles.link_group}>
                 <li className={styles.link}>Navigation</li>
-                <li className={styles.link}>Home</li>
-                <li className={styles.link}>About us</li>
-                <li className={styles.link}>Contact us</li>
+                <li className={styles.link}>
+                  <Link href="/">Home </Link>
+                </li>
+                <li className={styles.link}>
+                  <Link href="/#about_section"> About us </Link>
+                </li>
+                <li className={styles.link}>
+                  <Link href={`${router.pathname}#contact_section`}>
+                    {" "}
+                    Contact us{" "}
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -30,7 +45,9 @@ export const Footer = () => {
               <ul className={styles.link_group}>
                 <li className={styles.link}>Services</li>
                 {services.map((service, index) => (
-                  <li className={styles.link} key={index}>{service.title}</li>
+                  <li className={styles.link} key={index}>
+                    <Link href={service.link}>{service.title}</Link>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -38,9 +55,19 @@ export const Footer = () => {
             <div className="col-lg-3 col-md-5 col-7 order-md-3 order-4">
               <ul className={styles.link_group}>
                 <li className={styles.link}>Company Info</li>
-                <li className={styles.link}>tel. +1 204 952 3913</li>
-                <li className={styles.link}>Info@turnkeyunified.com</li>
-                <li className={styles.link}>www.turnkeyunified.com</li>
+                <li className={styles.link}>
+                  <Link href="tel:+12049523913">tel. +1 204 952 3913</Link>
+                </li>
+                <li className={styles.link}>
+                  <Link href="mailto:info@turnkeyunified.com" target="_blank">
+                    Info@turnkeyunified.com
+                  </Link>
+                </li>
+                <li className={styles.link}>
+                  <Link href="https://www.turnkeyunified.com">
+                    www.turnkeyunified.com
+                  </Link>
+                </li>
               </ul>
             </div>
 

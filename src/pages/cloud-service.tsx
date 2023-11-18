@@ -122,9 +122,9 @@ export default function CloudService() {
         <div className="container">
           <h3 className={styles.title}>Managed Turnkey Cloud Features</h3>
 
-          <section className="row">
+          <section className="row" id="cloud_service">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>Managed Cloud Services</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -211,7 +211,7 @@ export default function CloudService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="microsoft_365_and_azure_integration">
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={MicrosoftSuitImg}
@@ -221,7 +221,7 @@ export default function CloudService() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
                 <h5 className={styles.name}>
                   Microsoft 365 and Azure Integration
                 </h5>
@@ -303,9 +303,9 @@ export default function CloudService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="aws_migration_and_wmware_solution">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>
                   AWS Migrations and Vmware Solutions
                 </h5>
@@ -394,7 +394,7 @@ export default function CloudService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="voice_service">
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={VoiceServiceImg}
@@ -404,7 +404,7 @@ export default function CloudService() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
                 <h5 className={styles.name}>
                   Turnkey Cloud Voice Services - Productivity Everywhere
                 </h5>
@@ -486,9 +486,9 @@ export default function CloudService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="pay_for_what_you_use">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>Pay for What you Use</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna

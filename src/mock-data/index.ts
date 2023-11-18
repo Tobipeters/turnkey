@@ -12,28 +12,28 @@ export const services: IService[] = [
     title: "Cybersecurity as a service",
     details:
       "We ensure everything is constantly updated in the background, leaving you with the peace of mind that your business is protected and your data is safe.",
-    link: "cybersecurity-as-a-service",
+    link: "/cybersecurity-as-a-service",
     photo: CyberSecurityImg,
     sub_services: [
       {
         name: "IT Governance and Risk Management",
-        link: "",
+        link: "IT_governance",
       },
       {
         name: "Managed Security Solution",
-        link: "",
+        link: "security_solution",
       },
       {
         name: "Phishing and Malware Protection",
-        link: "",
+        link: "malware_protection",
       },
       {
         name: "Vulnerability and Penetration Testing",
-        link: "",
+        link: "penetration_testing",
       },
       {
         name: "Cybersecurity Awareness Training",
-        link: "",
+        link: "awareness_training",
       },
     ],
   },
@@ -41,28 +41,28 @@ export const services: IService[] = [
     title: "IT Services",
     details:
       "Turnkey Kinetic provides Managed IT Service which integrates the monitoring of all critical resources across the network.",
-    link: "IT-service",
+    link: "/IT-service",
     photo: ITServiceImg,
     sub_services: [
       {
         name: "IT Advisory and Consulting",
-        link: "",
+        link: "IT_advisory",
       },
       {
-        name: "Proactive Technical  Support",
-        link: "",
+        name: "Proactive Technical Support",
+        link: "technical_support",
       },
       {
         name: "Network Design and Management",
-        link: "",
+        link: "network_design",
       },
       {
         name: "IT Staff Augmentation",
-        link: "",
+        link: "staff_augmentation",
       },
       {
         name: "IT Project Management",
-        link: "",
+        link: "project_management",
       },
     ],
   },
@@ -70,28 +70,28 @@ export const services: IService[] = [
     title: "Turnkey Cloud Service",
     details:
       "Turnkey Kinetics  has been providing Cloud Services to our clients for several years and has the experience and training to do it right.",
-    link: "cloud-service",
+    link: "/cloud-service",
     photo: CloudServiceImg,
     sub_services: [
       {
         name: "Managed Cloud Services",
-        link: "",
+        link: "cloud_service",
       },
       {
         name: "Microsoft 365 and Azure Integration",
-        link: "",
+        link: "microsoft_365_and_azure_integration",
       },
       {
         name: "AWS Migrations and Vmware Solutions",
-        link: "",
+        link: "aws_migration_and_wmware_solution",
       },
       {
         name: "Turnkey Cloud Voice Services - Productivity Everywhere",
-        link: "",
+        link: "voice_service",
       },
       {
         name: "Pay for What you Use",
-        link: "",
+        link: "pay_for_what_you_use",
       },
     ],
   },
@@ -99,24 +99,24 @@ export const services: IService[] = [
     title: "Hardware and E-waste Management",
     details:
       "From procurement to eco-friendly disposal, we handle all aspects of your hardware and e-waste. Our solutions prioritize sustainability, compliance, and resource efficiency.",
-    link: "hardware-management",
+    link: "/hardware-management",
     photo: HardwareServiceImg,
     sub_services: [
       {
         name: "Desktop, Laptops, MacOS, Phones - Repairs",
-        link: "",
+        link: "repairs",
       },
       {
         name: "Hardware Recycling and Disposal",
-        link: "",
+        link: "hardware_recycling",
       },
       {
         name: "Data Security and Recovery",
-        link: "",
+        link: "data_security_and_recovery",
       },
       {
         name: "Data Destruction",
-        link: "",
+        link: "data_destruction",
       },
     ],
   },

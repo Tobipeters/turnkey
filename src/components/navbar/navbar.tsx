@@ -37,14 +37,18 @@ export const NavBar = () => {
 
   const closeMenu = () => handleMenuToggle();
 
-  const goToContact = () => router.push("/#contact_section");
+  const goToContact = () => router.push(`${router.pathname}#contact_section`);
 
   const renderMainMenu = (is_btn: boolean = true) => {
     return (
       <ul className={styles.menu_group}>
         {menuLists.map((menu: any, id: number) => (
           <li className={styles.menu_list} key={id}>
-            <Link href={menu.link} onClick={closeMenu}>
+            <Link
+              className={router.asPath === menu.link ? styles.active_link : ""}
+              href={menu.link}
+              onClick={closeMenu}
+            >
               {menu.name}
             </Link>
           </li>
@@ -111,7 +115,15 @@ export const NavBar = () => {
                   }}
                 >
                   <div className="d-flex align-items-center gap-2">
-                    <Link href={service.link} onClick={closeMenu}>
+                    <Link
+                      href={service.link}
+                      onClick={closeMenu}
+                      className={
+                        router.pathname === service.link
+                          ? styles.active_link
+                          : ""
+                      }
+                    >
                       {service?.title}
                     </Link>
                     <div
@@ -135,7 +147,15 @@ export const NavBar = () => {
                     {service.sub_services.map(
                       (sub_service: ISubService, id: number) => (
                         <li key={id}>
-                          <Link href={sub_service.link}>
+                          <Link
+                            href={`${service.link}#${sub_service.link}`}
+                            className={
+                              router.asPath ===
+                              `${service.link}#${sub_service.link}`
+                                ? styles.active_sub_service_link
+                                : ""
+                            }
+                          >
                             {sub_service.name}
                           </Link>
                         </li>

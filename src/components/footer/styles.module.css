@@ -42,6 +42,11 @@
   line-height: 147.4%; /* 1.474rem */
 }
 
+.link_group .link a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .bottom_notes {
   border-top: 1px solid #989898;
   padding: 1rem 0 1.5rem;

@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import { services } from "@/mock-data";
 import { TButton } from "..";
 import React from "react";
+import Link from "next/link";
 
 export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
   return (
@@ -107,9 +108,16 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
 
               <div className={styles.info_container}>
                 <h6 className={styles.name}>Company Info</h6>
-                <a className={styles.value}>tel. +1 204 952 3913</a>
+                <Link className={styles.value} href="tel:+12049523913">
+                  tel. +1 204 952 3913
+                </Link>
                 <br />
-                <a className={styles.value}>www.turnkeyunified.com</a>
+                <Link
+                  href="https://www.turnkeyunified.com"
+                  className={styles.value}
+                >
+                  www.turnkeyunified.com
+                </Link>
               </div>
             </div>
           </div>

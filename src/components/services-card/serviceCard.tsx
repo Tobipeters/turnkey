@@ -2,12 +2,15 @@ import styles from "./styles.module.css";
 import { TButton } from "..";
 import { IService } from "@/mock-data/model";
 import * as React from "react";
+import { useRouter } from "next/router";
 
 interface IProps {
   service: IService;
 }
 
 export const ServiceCard: React.FC<IProps> = ({ service }) => {
+  const router = useRouter();
+
   return (
     <div
       className={styles.card_container}
@@ -17,7 +20,11 @@ export const ServiceCard: React.FC<IProps> = ({ service }) => {
         <h4 className={styles.title}>{service.title}</h4>
         <p className={styles.details}>{service.details}</p>
 
-        <TButton size="sm" text="Learn more" />
+        <TButton
+          click={() => router.push(`${service.link}`)}
+          size="sm"
+          text="Learn more"
+        />
       </div>
     </div>
   );

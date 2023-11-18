@@ -47,7 +47,7 @@ export default function Cybersecurity() {
       value:
         "IT governance and risk management are crucial for aligning technology with business objectives, mitigating threats, ensuring compliance, and promoting cost efficiency",
     },
-  ]; 
+  ];
 
   return (
     <>
@@ -128,9 +128,9 @@ export default function Cybersecurity() {
         <div className="container">
           <h3 className={styles.title}>Managed cybersecurity Features</h3>
 
-          <section className="row">
+          <section className="row" id="IT_governance">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>
                   IT Governance and Risk Management
                 </h5>
@@ -219,7 +219,7 @@ export default function Cybersecurity() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="security_solution">
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={SecuritySolutionBgImg}
@@ -229,7 +229,7 @@ export default function Cybersecurity() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
                 <h5 className={styles.name}>Managed Security Solution</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -309,9 +309,9 @@ export default function Cybersecurity() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="malware_protection">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>Phishing and Malware Protection</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -399,7 +399,7 @@ export default function Cybersecurity() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="penetration_testing">
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={PenetrationTestingBgImg}
@@ -409,7 +409,7 @@ export default function Cybersecurity() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
                 <h5 className={styles.name}>
                   Vulnerability and Penetration Testing
                 </h5>
@@ -491,9 +491,9 @@ export default function Cybersecurity() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="awareness_training">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+              <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>
                   Cybersecurity Awareness Training
                 </h5>

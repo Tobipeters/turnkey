@@ -115,9 +115,9 @@ export default function ITService() {
         <div className="container">
           <h3 className={styles.title}>Managed IT Services Key Features</h3>
 
-          <section className="row">
+          <section className="row" id="IT_advisory">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>IT Advisory and Consulting</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -204,7 +204,7 @@ export default function ITService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="technical_support">
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={TechnicalSupportImg}
@@ -214,7 +214,7 @@ export default function ITService() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
                 <h5 className={styles.name}>Proactive Technical Support</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -294,9 +294,9 @@ export default function ITService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="network_design">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>Network Design and Management</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -383,7 +383,7 @@ export default function ITService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="staff_augmentation">
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={ITStaffImg}
@@ -393,7 +393,7 @@ export default function ITService() {
             </div>
 
             <div className="col-lg-6">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
                 <h5 className={styles.name}>IT Staff Augmentation</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -473,9 +473,9 @@ export default function ITService() {
             </div>
           </section>
 
-          <section className="row">
+          <section className="row" id="project_management">
             <div className="col-lg-6 order-2 order-lg-1">
-              <div className={styles.text_holder}>
+            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
                 <h5 className={styles.name}>IT Project Management</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
