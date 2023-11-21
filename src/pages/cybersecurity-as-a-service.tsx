@@ -129,18 +129,38 @@ export default function Cybersecurity() {
           <h3 className={styles.title}>Managed cybersecurity Features</h3>
 
           <section className="row" id="IT_governance">
-            <div className="col-lg-6 order-2 order-lg-1">
-              <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>
                   IT Governance and Risk Management
                 </h5>
                 <p className={styles.details}>
-                  Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
-                  massa quis massa ornare etiam pellentesque. Massa massa nunc
-                  nibh et interdum a. Interdum ultrices porttitor odio sed et a
-                  condimentum quis arcu. Euismod dolor dignissim ut felis vitae
-                  nulla fermentum sapien.
+                  At Turnkey Kinetics, we are dedicated to enhancing your
+                  business&apos;s competitive edge through excellence in IT
+                  Governance and Risk Management. Our track record has earned
+                  the trust of companies navigating the complexities of
+                  governance, risk, and compliance. Our comprehensive suite of
+                  services is designed to align your IT operations with your
+                  business goals, ensuring compliance, data security, and
+                  business continuity.
                 </p>
+              </div>
+            </div>
+            <div className="col-lg-6 order-2 order-lg-1">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
+                {/* <h5 className={styles.name}>
+                  IT Governance and Risk Management
+                </h5>
+                <p className={styles.details}>
+                  At Turnkey Kinetics, we are dedicated to enhancing your
+                  business&apos;s competitive edge through excellence in IT
+                  Governance and Risk Management. Our track record has earned
+                  the trust of companies navigating the complexities of
+                  governance, risk, and compliance. Our comprehensive suite of
+                  services is designed to align your IT operations with your
+                  business goals, ensuring compliance, data security, and
+                  business continuity.
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -160,8 +180,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Compliance Management and Reporting:</strong> We
+                      help you navigate complex regulatory landscapes and ensure
+                      that your IT practices align with compliance requirements.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -171,8 +194,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Risk Assessment:</strong> Our in-depth risk
+                      assessments enable you to make informed decisions and
+                      implement effective risk mitigation strategies.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -182,8 +208,12 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Business Continuity Planning:</strong> We assist
+                      you in creating robust business continuity plans to ensure
+                      that your operations can continue even in the face of
+                      disruptions.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -193,8 +223,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Security Audits and Assessment:</strong> Our
+                      thorough security audits and assessments uncover
+                      vulnerabilities in your IT environment,
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -204,8 +237,38 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Vendor Risk Management:</strong> We help you
+                      manage the risks associated with third-party vendors,
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong>Security Awareness and Training:</strong> Our
+                      training programs empower your workforce to recognize and
+                      respond to security threats effectively.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong>Data Protection and Privacy:</strong> We implement
+                      robust data protection measures and ensure compliance with
+                      privacy regulations
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -220,6 +283,22 @@ export default function Cybersecurity() {
           </section>
 
           <section className="row" id="security_solution">
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder}`}>
+                <h5 className={styles.name}>Managed Security Solution</h5>
+                <p className={styles.details}>
+                  Data is king, and securing your organization against cyber
+                  threats is not just a priority but a necessity that Turnkey
+                  Kinetics are committed to supply. Managed Security Solutions
+                  are your digital proactive protection and expert guidance to
+                  fortify your business against relentless threats, and Turnkey
+                  Kinetics is your strategic ally in the ever-escalating battle
+                  against cyber adversaries. Our Managed Security Solutions are
+                  crafted to keep pace with the ever-changing cybersecurity
+                  landscape, ensuring that your organization remains protected.
+                </p>
+              </div>
+            </div>
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={SecuritySolutionBgImg}
@@ -229,15 +308,15 @@ export default function Cybersecurity() {
             </div>
 
             <div className="col-lg-6">
-              <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
-                <h5 className={styles.name}>Managed Security Solution</h5>
+              <div className={`${styles.text_holder} ms-xl-4 ms-lg-2`}>
+                {/* <h5 className={styles.name}>Managed Security Solution</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
                   massa quis massa ornare etiam pellentesque. Massa massa nunc
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -257,8 +336,10 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Threat Detection and Response:</strong> Identify
+                      and mitigate potential security risks swiftly.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -268,8 +349,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Firewall and Intrusion Prevention:</strong>
+                      Safeguard networks by blocking unauthorized access and
+                      potential breaches.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -279,8 +363,10 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Vulnerability Management:</strong> Identify and
+                      address system weaknesses to prevent exploitation.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -290,8 +376,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Data Encryption and Protection:</strong> Secure
+                      sensitive information through encryption and robust
+                      protective measures.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -301,8 +390,38 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Cloud Security Solutions:</strong> Ensure secure
+                      cloud operations and data protection.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong>Security Awareness Training:</strong> Educate
+                      personnel to recognize and prevent security threats
+                      effectively.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong>Compliance and Governance:</strong> Align
+                      operations with regulations and enforce governance
+                      standards.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -310,16 +429,34 @@ export default function Cybersecurity() {
           </section>
 
           <section className="row" id="malware_protection">
-            <div className="col-lg-6 order-2 order-lg-1">
-              <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Phishing and Malware Protection</h5>
+                <p className={styles.details}>
+                  At Turnkey Kinetics we transformed safeguarding digital assets
+                  into an art form; with comprehensive Phishing and Malware
+                  Protection services that are meticulously designed to
+                  counteract evolving cyber threats, making us your trusted
+                  partner in a shifting digital landscape.
+                  <br />
+                  As cyber adversaries grow more sophisticated, your
+                  organization&apos;s safety hinges on robust Phishing and
+                  Malware Protection. But what does this protection entail, and
+                  how does Turnkey Kinetics lead the charge in securing your
+                  digital fortress?
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6 order-2 order-lg-1">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
+                {/* <h5 className={styles.name}>Phishing and Malware Protection</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
                   massa quis massa ornare etiam pellentesque. Massa massa nunc
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -339,8 +476,10 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Real-Time Threat Analysis:</strong> Instant
+                      identification and response to emerging security threats.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -350,8 +489,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Advanced Email Filtering:</strong> Robust
+                      filtering to prevent sophisticated email-based security
+                      threats.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -361,8 +503,10 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Endpoint Protection:</strong> Safeguard
+                      individual devices from cybersecurity threats.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -372,8 +516,10 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Behavior-Based Threat Detection:</strong>{" "}
+                      Identify anomalies in behavior for early threat detection.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -383,8 +529,37 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Vulnerability Assessment:</strong> Identify and
+                      address weaknesses to fortify overall cybersecurity
+                      defenses.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Secure Web Browsing:</strong> Ensure safe
+                      internet usage through protective web browsing measures.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Employee Training:</strong> Educate personnel for
+                      enhanced awareness and proactive cybersecurity measures.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -400,6 +575,26 @@ export default function Cybersecurity() {
           </section>
 
           <section className="row" id="penetration_testing">
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder}`}>
+                <h5 className={styles.name}>
+                  Vulnerability and Penetration Testing
+                </h5>
+                <p className={styles.details}>
+                  At Turnkey Kinetics, our Vulnerability and Penetration Testing
+                  (VAPT) services are designed to help you not only combat
+                  threats but also chart a course for a secure digital future.
+                  There are always risks online, but with our services, you will
+                  always be ahead of the game.
+                  <br />
+                  Our team has harnessed the power of VAPT to safeguard your
+                  digital empire. We offer a spectrum of services designed to
+                  fortify your defenses, proactively identify vulnerabilities,
+                  and empower your organization in a digital world fraught with
+                  threats.
+                </p>
+              </div>
+            </div>
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={PenetrationTestingBgImg}
@@ -409,8 +604,8 @@ export default function Cybersecurity() {
             </div>
 
             <div className="col-lg-6">
-              <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
-                <h5 className={styles.name}>
+              <div className={`${styles.text_holder} ms-xl-4 ms-lg-2`}>
+                {/* <h5 className={styles.name}>
                   Vulnerability and Penetration Testing
                 </h5>
                 <p className={styles.details}>
@@ -419,7 +614,7 @@ export default function Cybersecurity() {
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -439,8 +634,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Vulnerability Assessment:</strong> Identify and
+                      evaluate weaknesses in software and network infrastructure
+                      for proactive security.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -450,8 +648,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Penetration Testing:</strong> Simulate
+                      cyberattacks to discover vulnerabilities and weaknesses,
+                      ensuring robust security measures.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -461,8 +662,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Risk Measurement:</strong> Assess and quantify
+                      potential security risks to inform strategic
+                      decision-making for risk mitigation.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -472,8 +676,11 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Dynamic and Static Code Analysis:</strong> Examine
+                      software code in motion and at rest for security
+                      vulnerabilities and flaws.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -483,8 +690,25 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Compliance Safeguarding:</strong> Ensure adherence
+                      to regulatory standards and industry compliance,
+                      minimizing legal and financial risks.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong>Automated Solution:</strong> Employ automated
+                      tools and processes to enhance efficiency and
+                      effectiveness in security measures.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -492,9 +716,26 @@ export default function Cybersecurity() {
           </section>
 
           <section className="row" id="awareness_training">
-            <div className="col-lg-6 order-2 order-lg-1">
-              <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>
+                  Cybersecurity Awareness Training
+                </h5>
+                <p className={styles.details}>
+                  At Turnkey Kinetics, we help in equipping your employees with
+                  the right knowledge and skills through awareness training. It
+                  serves as the firewall against the loss of sensitive data,
+                  intellectual property, and financial assets, and safeguarding
+                  your brand reputation. This training from our experts directly
+                  addresses the common mistakes employees may make in their
+                  daily digital interactions, making it a cornerstone of your
+                  cybersecurity strategy.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6 order-2 order-lg-1">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
+                {/* <h5 className={styles.name}>
                   Cybersecurity Awareness Training
                 </h5>
                 <p className={styles.details}>
@@ -503,7 +744,7 @@ export default function Cybersecurity() {
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -523,8 +764,12 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Phishing Tests:</strong> Recognizing phishing
+                      threats is critical. Turnkey Kinetics conducts phishing
+                      email tests, reflecting real-life scenarios, to elevate
+                      your employees&apos; vigilance.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -534,8 +779,13 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Comprehensive Modules:</strong> Our training
+                      comprises 3 to 5 modules that are not just informative but
+                      engaging, delivered regularly to make cybersecurity
+                      education a seamless part of your employees&apos;
+                      responsibilities.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -545,30 +795,13 @@ export default function Cybersecurity() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Cybersecurity Best Practices:</strong> With our
+                      expertly curated content and streamlined administration
+                      through our cloud-based platform, Turnkey Kinetics makes
+                      cybersecurity awareness training an impactful and
+                      integrated part of your organization&apos;s security strategy.
+                    </div>
                   </li>
                 </ul>
               </div>
