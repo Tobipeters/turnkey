@@ -11,8 +11,8 @@ import MigrationImg from "../assets/cloud/migration.png";
 import VoiceServiceImg from "../assets/cloud/voice-service.png";
 import PayImg from "../assets/cloud/pay-img.png";
 import DistributionIcon from "../assets/cloud/Distributed.png";
-import DataMigrationIcon from "../assets/cloud/Data migration.png"
-import ProductivityIcon from "../assets/cloud/Productivity.png"
+import DataMigrationIcon from "../assets/cloud/Data migration.png";
+import ProductivityIcon from "../assets/cloud/Productivity.png";
 
 export default function CloudService() {
   const subServices = [
@@ -62,15 +62,15 @@ export default function CloudService() {
                   month plan. These easy-to-budget solutions offer significant
                   business value for our Small and Medium-sized (SMB) client
                   base.
-                  <br /> <br />A true &ldquo;Cloud Office&rdquo; solution is a reality for
-                  businesses with adequate Internet and appropriate
+                  <br /> <br />A true &ldquo;Cloud Office&rdquo; solution is a
+                  reality for businesses with adequate Internet and appropriate
                   redundancies. Many of our clients enjoy the benefits of a
                   complete business solution in a monthly payment instead of
                   upfront capital costs for a server. Clear Concepts specializes
                   in bringing enterprise-grade cloud solutions to an SMB market.
-                  Don&quot;t get lost in working with a national telecom that doesn&quot;t
-                  understand the needs of your business — contact Clear Concepts
-                  and let us earn your business.
+                  Don&quot;t get lost in working with a national telecom that
+                  doesn&quot;t understand the needs of your business — contact
+                  Clear Concepts and let us earn your business.
                 </p>
               </div>
             </div>
@@ -123,16 +123,27 @@ export default function CloudService() {
           <h3 className={styles.title}>Managed Turnkey Cloud Features</h3>
 
           <section className="row" id="cloud_service">
-            <div className="col-lg-6 order-2 order-lg-1">
-            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Managed Cloud Services</h5>
+                <p className={styles.details}>
+                  Choose Turnkey Kinetics for Managed Cloud Services that
+                  provide tailored solutions, scalability, cost-efficiency, and
+                  robust security controls, ensuring optimal performance and
+                  data protection for your organization.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6 order-2 order-lg-1">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
+                {/* <h5 className={styles.name}>Managed Cloud Services</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
                   massa quis massa ornare etiam pellentesque. Massa massa nunc
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -152,8 +163,12 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> IaaS (Infrastructure as a Service):</strong> Rent
+                      virtual computing resources on-demand, including
+                      infrastructure, processing power, storage, and networking
+                      components.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -163,8 +178,12 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> PaaS (Platform as a Service):</strong> Access
+                      application development platforms with development tools,
+                      operating systems, middleware, and databases for seamless
+                      application development in the cloud.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -174,8 +193,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> SaaS (Software as a Service):</strong> Utilize
+                      ready-to-use cloud-based applications via subscription
+                      models for increased productivity.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -185,8 +207,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> BMaaS (Bare Metal as a Service):</strong> Deploy
+                      dedicated physical servers on a pay-per-use basis,
+                      offering exclusive hardware control and management.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -196,8 +221,40 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> STaaS (Storage as a Service):</strong> Acquire
+                      storage capacity through cloud-based subscriptions,
+                      including storage volumes, raw capacity, and network file
+                      systems.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Cost-Effectiveness:</strong> Pay only for the
+                      resources you use, eliminating the need for costly
+                      hardware and software investments.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Customized Solutions:</strong> Tailor your cloud
+                      services to your unique workloads, especially in complex
+                      multi-cloud environments.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -212,6 +269,20 @@ export default function CloudService() {
           </section>
 
           <section className="row" id="microsoft_365_and_azure_integration">
+            <div className="col-12 mb-12">
+              <div className={`${styles.text_holder}`}>
+                <h5 className={styles.name}>
+                  Microsoft 365 and Azure Integration
+                </h5>
+                <p className={styles.details}>
+                  At Turnkey Kinetics, we specialize in seamlessly merging
+                  Microsoft 365 and Azure, two of the most influential pillars
+                  in cloud-based services, to empower your organization.
+                  Businesses must harness the power of integrated technology
+                  solutions to stay competitive.
+                </p>
+              </div>
+            </div>
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={MicrosoftSuitImg}
@@ -221,8 +292,8 @@ export default function CloudService() {
             </div>
 
             <div className="col-lg-6">
-            <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
-                <h5 className={styles.name}>
+              <div className={`${styles.text_holder} ms-xl-4 ms-lg-2`}>
+                {/* <h5 className={styles.name}>
                   Microsoft 365 and Azure Integration
                 </h5>
                 <p className={styles.details}>
@@ -231,7 +302,7 @@ export default function CloudService() {
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -251,8 +322,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Azure Cloud Migration:</strong> Seamless
+                      transition to Microsoft Azure for enhanced scalability and
+                      efficiency.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -262,8 +336,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Microsoft 365 Setup:</strong> Tailored setup
+                      ensuring optimal utilization of Microsoft 365 suite
+                      features.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -273,8 +350,10 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Data Integration:</strong> Efficient merging of
+                      diverse datasets for unified business insights.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -284,8 +363,10 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Security and Compliance:</strong> Robust measures
+                      ensuring data security and regulatory compliance.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -295,8 +376,38 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Custom Application Development:</strong> Tailored
+                      applications aligning with specific business requirements
+                      and goals.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> 24/7 Support:</strong> Continuous assistance and
+                      troubleshooting for uninterrupted system functionality.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Performance Optimization:</strong> Fine-tuning
+                      systems for peak performance and enhanced operational
+                      efficiency.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -304,9 +415,29 @@ export default function CloudService() {
           </section>
 
           <section className="row" id="aws_migration_and_wmware_solution">
-            <div className="col-lg-6 order-2 order-lg-1">
-            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
                 <h5 className={styles.name}>
+                  AWS Migrations and Vmware Solutions
+                </h5>
+                <p className={styles.details}>
+                  Our team at Turnkey Kinetics offers a comprehensive suite of
+                  services to facilitate your AWS migrations and VMware
+                  solutions.
+                  <br />
+                  When it comes to migrating vSphere-based environments to the
+                  cloud, enterprises with VMware workloads have a powerful ally
+                  in AWS Migrations and VMware Solutions. These are the kind of
+                  solutions we provide to facilitate the seamless transfer of
+                  virtual machines between on-premises data centers and the
+                  VMware Cloud on AWS software-defined data center (SDDC).
+                </p>
+              </div>
+            </div>
+
+            <div className="col-lg-6 order-2 order-lg-1">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
+                {/* <h5 className={styles.name}>
                   AWS Migrations and Vmware Solutions
                 </h5>
                 <p className={styles.details}>
@@ -315,7 +446,7 @@ export default function CloudService() {
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
+                </p> */}
 
                 <ul className={styles.list_group}>
                   <li>
@@ -335,8 +466,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> AWS Server Migration:</strong> Seamless
+                      relocation of servers to Amazon Web Services
+                      infrastructure.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -346,8 +480,13 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>
+                        AWS Application Migration Service (AWS MGN):
+                      </strong>
+                      Streamlined migration service for efficient application
+                      transfer to AWS.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -357,8 +496,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> AWS Connector Configuration:</strong> Setting up
+                      connectors for smooth communication between systems and
+                      AWS.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -368,8 +510,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Hybrid Cloud Integration:</strong> Integrating
+                      on-premises infrastructure with AWS for enhanced
+                      flexibility.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -379,8 +524,39 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Minimal Downtime Migration:</strong> Ensuring
+                      minimal disruption during the migration process for
+                      uninterrupted operations.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Physical to AWS Migration:</strong> Effortless
+                      migration of physical servers to Amazon Web Services
+                      environment.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Multi-Cloud Compatibility: </strong> Supporting
+                      migration and operation across multiple cloud environments
+                      seamlessly.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -395,6 +571,20 @@ export default function CloudService() {
           </section>
 
           <section className="row" id="voice_service">
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder} ms-xl-4 ms-lg-2`}>
+                <h5 className={styles.name}>
+                  Turnkey Cloud Voice Services - Productivity Everywhere
+                </h5>
+                <p className={styles.details}>
+                  Turnkey Kinetics Cloud Voice Services focuses on proving you
+                  with efficient, cost-effective, and secure communication
+                  solutions, backed by excellent customer service and the latest
+                  technology innovations.
+                </p>
+              </div>
+            </div>
+
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={VoiceServiceImg}
@@ -404,8 +594,8 @@ export default function CloudService() {
             </div>
 
             <div className="col-lg-6">
-            <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
-                <h5 className={styles.name}>
+              <div className={`${styles.text_holder} ms-xl-4 ms-lg-2`}>
+                {/* <h5 className={styles.name}>
                   Turnkey Cloud Voice Services - Productivity Everywhere
                 </h5>
                 <p className={styles.details}>
@@ -414,8 +604,7 @@ export default function CloudService() {
                   nibh et interdum a. Interdum ultrices porttitor odio sed et a
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
-                </p>
-
+                </p> */}
                 <ul className={styles.list_group}>
                   <li>
                     <Image
@@ -434,8 +623,27 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Cloud Telephony Solutions:</strong> Modern phone
+                      services hosted on cloud platforms for businesses.
+                    </div>
+                  </li>
+
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong>
+                        Unified Communications as a Service (UCaaS):
+                      </strong>
+                      Integrated communication services accessible through
+                      cloud-based platforms.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -445,8 +653,11 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Cloud Communications Providers:</strong>{" "}
+                      Companies offering cloud-based solutions for streamlined
+                      and flexible communications.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -456,8 +667,10 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> VoIP Service:</strong> Voice over Internet
+                      Protocol for efficient and cost-effective communication.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -467,8 +680,10 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Hardware Reduction:</strong> Minimizing reliance
+                      on physical equipment for communication infrastructure.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -478,17 +693,33 @@ export default function CloudService() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Cost-Efficiency:</strong> Lowering communication
+                      costs through cloud-based and VoIP services.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Simplified Implementation:</strong> Easy and
+                      straightforward deployment of cloud-based communication
+                      solutions.
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
           </section>
 
-          <section className="row" id="pay_for_what_you_use">
+          {/* <section className="row" id="pay_for_what_you_use">
             <div className="col-lg-6 order-2 order-lg-1">
-            <div className={`${styles.text_holder} me-xl-5 me-lg-3`}>
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
                 <h5 className={styles.name}>Pay for What you Use</h5>
                 <p className={styles.details}>
                   Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
@@ -573,7 +804,7 @@ export default function CloudService() {
                 className={`img-fluid ${styles.section_img}`}
               />
             </div>
-          </section>
+          </section> */}
         </div>
       </main>
       <Contact isBanner={false} />
