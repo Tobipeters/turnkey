@@ -56,7 +56,7 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
                   />
                 </div>
                 <div className="mb-4">
-                  <label className={styles.label}>Your email* </label>
+                  <label className={styles.label}>Your message* </label>
                   <textarea
                     className="form-control"
                     placeholder="Hello Turnkey"

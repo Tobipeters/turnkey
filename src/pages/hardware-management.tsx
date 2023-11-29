@@ -131,43 +131,18 @@ export default function HardwareMgt() {
                   Desktop, Laptops, MacOS, Phones - Repairs
                 </h5>
                 <p className={styles.details}>
-                  We specialize in diagnosing and fixing a wide range of
-                  problems. Whether your desktop has performance hiccups, your
-                  laptop&apos;s screen is malfunctioning, or your macOS device
-                  requires troubleshooting, we&apos;re here to help. We also cater to
-                  mobile phone repairs, addressing everything from screen
-                  replacements to battery issues.
-                  <br />
-                  With our eco-friendly hardware recycling and disposal, the
-                  need to responsibly dispose of outdated hardware becomes
-                  increasingly important. Turnkey Kinetics takes a proactive
-                  approach by providing eco-friendly hardware recycling and
-                  disposal services. We understand the environmental impact of
-                  electronic waste and are dedicated to managing it responsibly.
+                  Our team of skilled technicians specializes in diagnosing and
+                  fixing a wide range of problems. Whether your desktop has
+                  performance hiccups, your laptop&apos;s screen is
+                  malfunctioning, or your macOS device requires troubleshooting,
+                  we&apos;re here to help. We also cater to mobile phone
+                  repairs, addressing everything from screen replacements to
+                  battery issues.
                 </p>
               </div>
             </div>
             <div className="col-lg-6 order-2 order-lg-1">
               <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
-                {/* <h5 className={styles.name}>
-                  Desktop, Laptops, MacOS, Phones - Repairs
-                </h5>
-                <p className={styles.details}>
-                  We specialize in diagnosing and fixing a wide range of
-                  problems. Whether your desktop has performance hiccups, your
-                  laptop's screen is malfunctioning, or your macOS device
-                  requires troubleshooting, we're here to help. We also cater to
-                  mobile phone repairs, addressing everything from screen
-                  replacements to battery issues.
-                  <br />
-                  With our eco-friendly hardware recycling and disposal, the
-                  need to responsibly dispose of outdated hardware becomes
-                  increasingly important. Turnkey Kinetics takes a proactive
-                  approach by providing eco-friendly hardware recycling and
-                  disposal services. We understand the environmental impact of
-                  electronic waste and are dedicated to managing it responsibly.
-                </p> */}
-
                 <ul className={styles.list_group}>
                   <li>
                     <Image
@@ -186,8 +161,9 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    We will do component-level motherboard repair without the
-                    high cost of a full motherboard replacement.
+                    Desktop Repairs: From hardware malfunctions to software
+                    issues, we diagnose and fix a wide range of desktop
+                    problems.
                   </li>
                   <li>
                     <Image
@@ -197,9 +173,9 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    We will ultrasonically clean the liquid damage so the
-                    corrosion does not cause further short circuits and damage
-                    to components.
+                    Laptop Repairs: Whether it's a cracked screen,
+                    malfunctioning keyboard, or software glitch, our experts
+                    handle laptop repairs with precision.
                   </li>
                   <li>
                     <Image
@@ -209,7 +185,9 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    We have a no fix, no pay policy and we give free estimates.
+                    MacOS Optimization: Trust us to fine-tune your MacOS devices
+                    for optimal performance, addressing speed and efficiency
+                    concerns.
                   </li>
                   <li>
                     <Image
@@ -219,7 +197,9 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    We practice safe and eco-friendly recycling.
+                    Phone Repairs: From screen replacements to resolving
+                    software glitches, we offer comprehensive phone repair
+                    services for various brands.
                   </li>
                 </ul>
               </div>
@@ -234,6 +214,23 @@ export default function HardwareMgt() {
           </section>
 
           <section className="row" id="hardware_recycling">
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
+                <h5 className={styles.name}>Hardware Recycling and Disposal</h5>
+                <p className={styles.details}>
+                  At Turnkey Kinetics, we understand the critical importance of
+                  responsible hardware disposal. Our dedicated team employs
+                  state-of-the-art methods to ensure the safe and eco-friendly
+                  recycling of electronic devices.
+                  <br /> <br />
+                  Whether you&apos;re a business looking to upgrade your IT
+                  infrastructure or an individual seeking to dispose of outdated
+                  gadgets, we offer tailored solutions that comply with the
+                  highest environmental standards.
+                </p>
+              </div>
+            </div>
+
             <div className="col-lg-6 d-flex align-items-center">
               <Image
                 src={HardwareRecyclingImg}
@@ -244,15 +241,6 @@ export default function HardwareMgt() {
 
             <div className="col-lg-6">
               <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
-                <h5 className={styles.name}>Hardware Recycling and Disposal</h5>
-                <p className={styles.details}>
-                  Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
-                  massa quis massa ornare etiam pellentesque. Massa massa nunc
-                  nibh et interdum a. Interdum ultrices porttitor odio sed et a
-                  condimentum quis arcu. Euismod dolor dignissim ut felis vitae
-                  nulla fermentum sapien.
-                </p>
-
                 <ul className={styles.list_group}>
                   <li>
                     <Image
@@ -271,8 +259,12 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>Secure Data Destruction:</strong> We prioritize
+                      your data security through certified data destruction
+                      methods, guaranteeing that sensitive information is
+                      permanently erased.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -282,8 +274,12 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Environmentally Friendly Recycling:</strong> We
+                      follow stringent environmental guidelines, responsibly
+                      recycling electronic components to minimize ecological
+                      impact.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -293,8 +289,11 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Asset Remarketing:</strong> Extend the life of
+                      your technology assets through our remarketing services,
+                      reducing waste and promoting a circular economy.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -304,8 +303,12 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> E-Waste Collection and Transport:</strong> Our
+                      efficient collection and transportation services ensure a
+                      hassle-free experience, allowing you to contribute to
+                      sustainability effortlessly.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -315,8 +318,12 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Compliance Assurance:</strong> Stay compliant
+                      with local and international regulations governing
+                      electronic waste disposal. We manage the complexities, so
+                      you don't have to.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -324,17 +331,21 @@ export default function HardwareMgt() {
           </section>
 
           <section className="row" id="data_security_and_recovery">
-            <div className="col-lg-6 order-2 order-lg-1">
-              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
+            <div className="col-12 mb-3">
+              <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Data Security and Recovery</h5>
                 <p className={styles.details}>
-                  Lorem ipsum dolor sit amet consectetur. Orci vel feugiat magna
-                  massa quis massa ornare etiam pellentesque. Massa massa nunc
-                  nibh et interdum a. Interdum ultrices porttitor odio sed et a
-                  condimentum quis arcu. Euismod dolor dignissim ut felis vitae
-                  nulla fermentum sapien.
+                  Data security is the foundation of trust in technology. The
+                  practice of safeguarding digital information from unauthorized
+                  access, corruption, and theft throughout its entire lifecycle,
+                  is a holistic concept with various dimensions which our team
+                  of experts at Turnkey Kinetics promises
                 </p>
+              </div>
+            </div>
 
+            <div className="col-lg-6 order-2 order-lg-1">
+              <div className={`${styles.text_holder} me-xl-4 me-lg-2`}>
                 <ul className={styles.list_group}>
                   <li>
                     <Image
@@ -353,8 +364,11 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Data Security Solutions:</strong> Protective
+                      measures ensuring confidentiality, integrity, and
+                      availability of data assets.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -364,8 +378,11 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Data Discovery and Classification:</strong>
+                      Identify and categorize data for enhanced security and
+                      compliance.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -375,8 +392,11 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> File Activity Monitoring:</strong> Real-time
+                      tracking of file interactions for security and compliance
+                      monitoring.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -386,8 +406,13 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong>
+                        Vulnerability Assessment and Risk Analysis:
+                      </strong>
+                      Evaluate system weaknesses for proactive risk mitigation
+                      strategies.
+                    </div>
                   </li>
                   <li>
                     <Image
@@ -397,8 +422,53 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Benfit 1 Lorem ipsum dolor sit amet consectetur. Orci vel
-                    feugiat
+                    <div>
+                      <strong> Automated Compliance Reporting:</strong>{" "}
+                      Streamlined reporting to demonstrate adherence to
+                      regulatory and industry standards.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Data Security Strategies:</strong> Customized
+                      plans ensuring robust protection and management of
+                      sensitive information.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Physical Security:</strong> Safeguarding data
+                      through physical measures to prevent unauthorized access
+                      or theft.
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                      width={20}
+                      height={20}
+                      src={ListTickIcon}
+                      className={styles.icon}
+                      alt="list tick"
+                    />
+                    <div>
+                      <strong> Access Management and Controls:</strong> Regulate
+                      user access to data assets, ensuring confidentiality and
+                      integrity.
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -414,16 +484,17 @@ export default function HardwareMgt() {
 
           <section className="row" id="data_destruction">
             <div className="col-12 mb-0">
-            <div className={`${styles.text_holder} ms-xl-5 ms-lg-3`}>
+              <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Data Destruction</h5>
                 <p className={styles.details}>
                   For businesses, the importance of data destruction cannot be
                   overstated. It prevents data breaches, ensures compliance with
                   data protection laws, and reduces security risks.
                   <br />
-                  Turnkey Kinetics offers you more than IT inventory and audit services;
+                  Turnkey Kinetics offers you more than IT inventory and audit
+                  services;
                 </p>
-                </div>
+              </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
               <Image
