@@ -1,5 +1,5 @@
 import styles from "./styles/service.module.css";
-import { Contact } from "@/components";
+import { Contact, Seo } from "@/components";
 import Image from "next/image";
 import BenefitImg from "../assets/Hand.png";
 import ListTickIcon from "../assets/Tick.png";
@@ -44,6 +44,13 @@ export default function HardwareMgt() {
 
   return (
     <>
+      <Seo
+        title="Turnkey Kinetics Services | Hardware and E-waste Management"
+        description="At Turnkey Kinetics, We Take A Proactive Approach To Managing Hardware And E-Waste, Recognizing The Environmental And Security Implications Of Outdated Or Retired Equipment."
+        image="/og-images/hardware-about.png"
+        keywords="Turnkey, Service, IT, Manitoba, Canada, Hardware, E-waste, Management, Recycling, Resources, Electronic, Assets, Desktop, Laptop, Phone, MacOS, Windows, Linux, Data, Security, Recovery, Destruction, Repair"
+      />
+
       <header
         className={styles.header_section}
         style={{
@@ -173,7 +180,7 @@ export default function HardwareMgt() {
                       className={styles.icon}
                       alt="list tick"
                     />
-                    Laptop Repairs: Whether it's a cracked screen,
+                    Laptop Repairs: Whether it&apos;s a cracked screen,
                     malfunctioning keyboard, or software glitch, our experts
                     handle laptop repairs with precision.
                   </li>
@@ -322,7 +329,7 @@ export default function HardwareMgt() {
                       <strong> Compliance Assurance:</strong> Stay compliant
                       with local and international regulations governing
                       electronic waste disposal. We manage the complexities, so
-                      you don't have to.
+                      you don&apos;t have to.
                     </div>
                   </li>
                 </ul>

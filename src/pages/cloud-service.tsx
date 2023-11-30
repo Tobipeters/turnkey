@@ -1,5 +1,5 @@
 import styles from "./styles/service.module.css";
-import { Contact } from "@/components";
+import { Contact, Seo } from "@/components";
 import Image from "next/image";
 import BenefitImg from "../assets/Hand.png";
 import ListTickIcon from "../assets/Tick.png";
@@ -38,6 +38,13 @@ export default function CloudService() {
 
   return (
     <>
+      <Seo
+        title="Turnkey Kinetics Services | Turnkey Cloud"
+        description="Elevate Your Business With Our Managed Cloud Services. Our Experts Ensure Security, 24/7 Support, And Cost-Efficiency. Tailored Solutions, Scalability, And Streamlined Management, All In One Package. Contact Us Today For A Seamless Cloud Experience"
+        image="/og-images/cloud-service-img.png"
+        keywords="Turnkey, Service, IT, Manitoba, Canada, Cloud, IaaS, PaaS, SaaS, BMaaS, STaaS, Microsoft 365, Azure, Integration, Migration, AWS, Server, Telephony, VoIP, Security"
+      />
+
       <header
         className={styles.header_section}
         style={{
@@ -572,7 +579,7 @@ export default function CloudService() {
 
           <section className="row" id="voice_service">
             <div className="col-12 mb-3">
-              <div className={`${styles.text_holder} ms-xl-4 ms-lg-2`}>
+              <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>
                   Turnkey Cloud Voice Services - Productivity Everywhere
                 </h5>

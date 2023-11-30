@@ -1,5 +1,5 @@
 import styles from "./styles/service.module.css";
-import { Contact } from "@/components";
+import { Contact, Seo } from "@/components";
 import Image from "next/image";
 import BenefitImg from "../assets/Hand.png";
 import ListTickIcon from "../assets/Tick.png";
@@ -38,6 +38,13 @@ export default function ITService() {
 
   return (
     <>
+      <Seo
+        title="Turnkey Kinetics Services | Managed IT Services"
+        description="Turnkey Kinetic Provides Managed IT Service Which Integrates The Monitoring Of All Critical Resources Across The Network To Ensure Optimum Performance, And A Proactive Approach To Mitigate Potential Problems In An Environment Before They Occur."
+        image="/og-images/Manage-IT-service-brief-bg.png"
+        keywords="Turnkey, Service, IT, Manitoba, Canada, Support, Security, Malware, Protection, Risk, Costs, Advisory, Consulting, Assessment, Network, Design, Training, Staff, Augmentation, Project, Management"
+      />
+
       <header
         className={styles.header_section}
         style={{
@@ -347,11 +354,12 @@ export default function ITService() {
               <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Network Design and Management</h5>
                 <p className={styles.details}>
-                  Turnkey Kinetics&apos; approach is all-encompassing. We seamlessly
-                  integrate third-party systems into your network while
-                  safeguarding your data&apos;s integrity and security. We recognize
-                  the fast-paced landscape of technology, where connectivity is
-                  not just an advantage but a necessity for sustainable growth.
+                  Turnkey Kinetics&apos; approach is all-encompassing. We
+                  seamlessly integrate third-party systems into your network
+                  while safeguarding your data&apos;s integrity and security. We
+                  recognize the fast-paced landscape of technology, where
+                  connectivity is not just an advantage but a necessity for
+                  sustainable growth.
                   <br />
                   We understand that IT networks are the backbone of your
                   business operations, and our Network Design and Management
@@ -501,8 +509,8 @@ export default function ITService() {
                   witnessed remarkable growth across global organizations.
                   <br />
                   Ensuring your organization has the IT talent and flexibility
-                  required to excel in today&apos;s dynamic business environment is
-                  what we offer
+                  required to excel in today&apos;s dynamic business environment
+                  is what we offer
                 </p>
               </div>
             </div>

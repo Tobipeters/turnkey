@@ -12,7 +12,7 @@ type Props = {
   }>;
 };
 
-export const SEO: FC<Props> = ({ title, description, keywords, image, tags = [] }) => {
+export const Seo: FC<Props> = ({ title, description, keywords, image, tags = [] }) => {
   return (
     <Head>
       <title>{title}</title>
@@ -23,6 +23,7 @@ export const SEO: FC<Props> = ({ title, description, keywords, image, tags = [] 
       <meta property='og:title' content={title} />
       <meta property='og:description' content={description} />
       <meta property='og:type' content='website' />
+      {/* <meta property="og:url" content="https://www.constantc.com/" /> */}
       {image && (
         <>
           <meta name='twitter:image' content={image} />

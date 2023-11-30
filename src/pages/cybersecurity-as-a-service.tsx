@@ -1,5 +1,5 @@
 import styles from "./styles/service.module.css";
-import { Contact } from "@/components";
+import { Contact, Seo } from "@/components";
 import CybersecurityBgImg from "../assets/cybersecurity/cybersecurity-bg.jpeg";
 import ITGovernanceImg from "../assets/Mitigation.png";
 import SecuritySolutionImg from "../assets/Encrypted.png";
@@ -51,6 +51,13 @@ export default function Cybersecurity() {
 
   return (
     <>
+      <Seo
+        title="Turnkey Kinetics Services | Cybersecurity As A Service"
+        description="We Also Provide IT Compliance And Security Awareness Training, Ensuring Your Business Stays Protected And Compliant While Keeping Your Data Secure."
+        image="/og-images/cybersecurity-bg.jpeg"
+        keywords="Turnkey, Service, IT, Manitoba, Canada, Cybersecurity, Security, Malware, Protection, Risk, Awareness, Audit, Assessment, Phishing, Training, Penetration"
+      />
+
       <header className={styles.header_section}>
         <div className="container h-100">
           <div className={styles.text_holder}>
@@ -800,7 +807,8 @@ export default function Cybersecurity() {
                       expertly curated content and streamlined administration
                       through our cloud-based platform, Turnkey Kinetics makes
                       cybersecurity awareness training an impactful and
-                      integrated part of your organization&apos;s security strategy.
+                      integrated part of your organization&apos;s security
+                      strategy.
                     </div>
                   </li>
                 </ul>
