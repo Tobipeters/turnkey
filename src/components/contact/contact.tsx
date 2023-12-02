@@ -3,8 +3,48 @@ import { services } from "@/mock-data";
 import { TButton } from "..";
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
+  const router = useRouter();
+  const [btnText, setBtnText] = React.useState<string>("Send");
+  const formRef = React.useRef<HTMLFormElement | null>(null);
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+
+    if (formRef && formRef.current) {
+      const formData = new FormData(formRef.current);
+
+      // Perform any additional actions or submit the form data to your server
+      fetch(`https://formsubmit.co/${process.env.NEXT_PUBLIC_EMAIL_ID}`, {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => {
+          const res = response.json();
+
+          console.log(res);
+        })
+        .then((data) => {
+          // Handle the response from the server
+
+          setBtnText("Success, We'll reply you shortly");
+          formRef.current?.reset();
+
+          // console.log("Form submitted successfully:", data);
+        })
+        .catch((error) => {
+          console.error("Error submitting form:", error);
+        })
+        .finally(() => {
+          setTimeout(() => {
+            setBtnText("Send");
+          }, 5000);
+        });
+    }
+  };
+
   return (
     <section className={styles.contact_section} id="contact_section">
       <div className="container">
@@ -25,11 +65,30 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
 
           <div className="row">
             <div className="col-lg-6">
-              <form className={styles.form_section}>
+              <form
+                ref={formRef}
+                className={styles.form_section}
+                action={`https://formsubmit.co/${process.env.NEXT_PUBLIC_EMAIL_ID}`}
+                method="POST"
+                onSubmit={handleSubmit}
+              >
+                {/* Honeypot */}
+                <input type="text" name="_honey" style={{ display: "none" }} />
+
+                {/* Disable Captcha */}
+                <input type="hidden" name="_captcha" value={"false"} />
+
+                {/* Redirect after submission */}
+                {/* <input
+                  type="hidden"
+                  name="_next"
+                  value={`${currentDomain}${router.asPath}`}
+                /> */}
+
                 <h4 className={styles.details}>Send us a message</h4>
                 <div className="mb-4">
                   <label className={styles.label}>Select service* </label>
-                  <select className="form-control">
+                  <select className="form-control" name="service" required>
                     {services.map((service, id) => (
                       <option key={id} value={service.title}>
                         {service.title}
@@ -43,6 +102,7 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
                     className="form-control"
                     placeholder="Enter First and last name"
                     type="text"
+                    name="name"
                     required
                   />
                 </div>
@@ -52,6 +112,7 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
                     className="form-control"
                     placeholder="Enter email address"
                     type="email"
+                    name="email"
                     required
                   />
                 </div>
@@ -60,6 +121,7 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
                   <textarea
                     className="form-control"
                     placeholder="Hello Turnkey"
+                    name="message"
                     required
                   ></textarea>
                 </div>
@@ -76,7 +138,7 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
                   </label>
                 </div>
 
-                <TButton text="Send" type="submit" />
+                <TButton text={btnText} type="submit" />
               </form>
             </div>
 

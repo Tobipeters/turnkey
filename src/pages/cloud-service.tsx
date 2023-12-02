@@ -13,6 +13,7 @@ import PayImg from "../assets/cloud/pay-img.png";
 import DistributionIcon from "../assets/cloud/Distributed.png";
 import DataMigrationIcon from "../assets/cloud/Data migration.png";
 import ProductivityIcon from "../assets/cloud/Productivity.png";
+import { Slide, Bounce, Fade } from "react-awesome-reveal";
 
 export default function CloudService() {
   const subServices = [
@@ -53,7 +54,9 @@ export default function CloudService() {
       >
         <div className="container h-100">
           <div className={styles.text_holder}>
-            <h2 className={styles.title}>Turnkey Cloud</h2>
+            <Slide direction="left">
+              <h2 className={styles.title}>Turnkey Cloud</h2>
+            </Slide>
           </div>
         </div>
       </header>
@@ -63,30 +66,35 @@ export default function CloudService() {
           <div className="row">
             <div className="col-lg-6 d-flex align-items-center">
               <div className={styles.text_holder}>
-                <p className={styles.details}>
-                  Our Managed Cloud solution is available for Microsoft 365 and
-                  Microsoft Azure — services are offered on a per seat, per
-                  month plan. These easy-to-budget solutions offer significant
-                  business value for our Small and Medium-sized (SMB) client
-                  base.
-                  <br /> <br />A true &ldquo;Cloud Office&rdquo; solution is a
-                  reality for businesses with adequate Internet and appropriate
-                  redundancies. Many of our clients enjoy the benefits of a
-                  complete business solution in a monthly payment instead of
-                  upfront capital costs for a server. Clear Concepts specializes
-                  in bringing enterprise-grade cloud solutions to an SMB market.
-                  Don&quot;t get lost in working with a national telecom that
-                  doesn&quot;t understand the needs of your business — contact
-                  Clear Concepts and let us earn your business.
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    Our Managed Cloud solution is available for Microsoft 365
+                    and Microsoft Azure — services are offered on a per seat,
+                    per month plan. These easy-to-budget solutions offer
+                    significant business value for our Small and Medium-sized
+                    (SMB) client base.
+                    <br /> <br />A true &ldquo;Cloud Office&rdquo; solution is a
+                    reality for businesses with adequate Internet and
+                    appropriate redundancies. Many of our clients enjoy the
+                    benefits of a complete business solution in a monthly
+                    payment instead of upfront capital costs for a server. Clear
+                    Concepts specializes in bringing enterprise-grade cloud
+                    solutions to an SMB market. Don&quot;t get lost in working
+                    with a national telecom that doesn&quot;t understand the
+                    needs of your business — contact Clear Concepts and let us
+                    earn your business.
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6">
-              <Image
-                className="img-fluid"
-                src={CloudAboutImg}
-                alt="Cloud Services - Turnkey"
-              />
+              <Bounce>
+                <Image
+                  className="img-fluid"
+                  src={CloudAboutImg}
+                  alt="Cloud Services - Turnkey"
+                />
+              </Bounce>
             </div>
           </div>
         </div>
@@ -95,29 +103,39 @@ export default function CloudService() {
       <section className={styles.about_section}>
         <div className="container">
           <div className={styles.text_holder}>
-            <h3 className={styles.title}>
-              Experience Turnkey cloud services Perks
-            </h3>
-            <p className={styles.details}>
-              Elevate your business with our Managed Cloud Services. Our experts
-              ensure security, 24/7 support, and cost-efficiency. Tailored
-              solutions, scalability, and streamlined management, all in one
-              package. Contact us today for a seamless cloud experience
-            </p>
+            <Fade direction="down">
+              <h3 className={styles.title}>
+                Experience Turnkey cloud services Perks
+              </h3>
+            </Fade>
+            <Fade direction="down">
+              <p className={styles.details}>
+                Elevate your business with our Managed Cloud Services. Our
+                experts ensure security, 24/7 support, and cost-efficiency.
+                Tailored solutions, scalability, and streamlined management, all
+                in one package. Contact us today for a seamless cloud experience
+              </p>
+            </Fade>
           </div>
 
           <div className="row d-flex justify-content-center">
             {subServices.map((sub_service: any, id: number) => (
               <div className="col-lg-4 col-md-6" key={id}>
                 <div className={styles.ser_card}>
-                  <Image
-                    src={sub_service.icon}
-                    alt={sub_service.name}
-                    className="img-fluid"
-                    width={50}
-                  />
+                  <Bounce>
+                    <Image
+                      src={sub_service.icon}
+                      alt={sub_service.name}
+                      className="img-fluid"
+                      width={50}
+                    />
+                  </Bounce>
+
                   <h5 className={styles.name}> {sub_service.name} </h5>
-                  <p className={styles.details}> {sub_service.value} </p>
+
+                  <Fade direction="down">
+                    <p className={styles.details}> {sub_service.value} </p>
+                  </Fade>
                 </div>
               </div>
             ))}
@@ -133,12 +151,14 @@ export default function CloudService() {
             <div className="col-12 mb-3">
               <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Managed Cloud Services</h5>
-                <p className={styles.details}>
-                  Choose Turnkey Kinetics for Managed Cloud Services that
-                  provide tailored solutions, scalability, cost-efficiency, and
-                  robust security controls, ensuring optimal performance and
-                  data protection for your organization.
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    Choose Turnkey Kinetics for Managed Cloud Services that
+                    provide tailored solutions, scalability, cost-efficiency,
+                    and robust security controls, ensuring optimal performance
+                    and data protection for your organization.
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-2 order-lg-1">
@@ -152,118 +172,121 @@ export default function CloudService() {
                   nulla fermentum sapien.
                 </p> */}
 
-                <ul className={styles.list_group}>
-                  <li>
-                    <Image
-                      src={BenefitImg}
-                      width={45}
-                      height={45}
-                      alt="benefit"
-                    />
-                    Benefits you get from us
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> IaaS (Infrastructure as a Service):</strong> Rent
-                      virtual computing resources on-demand, including
-                      infrastructure, processing power, storage, and networking
-                      components.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> PaaS (Platform as a Service):</strong> Access
-                      application development platforms with development tools,
-                      operating systems, middleware, and databases for seamless
-                      application development in the cloud.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> SaaS (Software as a Service):</strong> Utilize
-                      ready-to-use cloud-based applications via subscription
-                      models for increased productivity.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> BMaaS (Bare Metal as a Service):</strong> Deploy
-                      dedicated physical servers on a pay-per-use basis,
-                      offering exclusive hardware control and management.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> STaaS (Storage as a Service):</strong> Acquire
-                      storage capacity through cloud-based subscriptions,
-                      including storage volumes, raw capacity, and network file
-                      systems.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Cost-Effectiveness:</strong> Pay only for the
-                      resources you use, eliminating the need for costly
-                      hardware and software investments.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Customized Solutions:</strong> Tailor your cloud
-                      services to your unique workloads, especially in complex
-                      multi-cloud environments.
-                    </div>
-                  </li>
-                </ul>
+                <Fade direction="down">
+                  <ul className={styles.list_group}>
+                    <li>
+                      <Image
+                        src={BenefitImg}
+                        width={45}
+                        height={45}
+                        alt="benefit"
+                      />
+                      Benefits you get from us
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> IaaS (Infrastructure as a Service):</strong>{" "}
+                        Rent virtual computing resources on-demand, including
+                        infrastructure, processing power, storage, and
+                        networking components.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> PaaS (Platform as a Service):</strong> Access
+                        application development platforms with development
+                        tools, operating systems, middleware, and databases for
+                        seamless application development in the cloud.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> SaaS (Software as a Service):</strong> Utilize
+                        ready-to-use cloud-based applications via subscription
+                        models for increased productivity.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> BMaaS (Bare Metal as a Service):</strong>{" "}
+                        Deploy dedicated physical servers on a pay-per-use
+                        basis, offering exclusive hardware control and
+                        management.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> STaaS (Storage as a Service):</strong> Acquire
+                        storage capacity through cloud-based subscriptions,
+                        including storage volumes, raw capacity, and network
+                        file systems.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Cost-Effectiveness:</strong> Pay only for the
+                        resources you use, eliminating the need for costly
+                        hardware and software investments.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Customized Solutions:</strong> Tailor your
+                        cloud services to your unique workloads, especially in
+                        complex multi-cloud environments.
+                      </div>
+                    </li>
+                  </ul>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 d-flex align-items-center">
@@ -281,13 +304,15 @@ export default function CloudService() {
                 <h5 className={styles.name}>
                   Microsoft 365 and Azure Integration
                 </h5>
-                <p className={styles.details}>
-                  At Turnkey Kinetics, we specialize in seamlessly merging
-                  Microsoft 365 and Azure, two of the most influential pillars
-                  in cloud-based services, to empower your organization.
-                  Businesses must harness the power of integrated technology
-                  solutions to stay competitive.
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    At Turnkey Kinetics, we specialize in seamlessly merging
+                    Microsoft 365 and Azure, two of the most influential pillars
+                    in cloud-based services, to empower your organization.
+                    Businesses must harness the power of integrated technology
+                    solutions to stay competitive.
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
@@ -310,113 +335,116 @@ export default function CloudService() {
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
                 </p> */}
-
-                <ul className={styles.list_group}>
-                  <li>
-                    <Image
-                      src={BenefitImg}
-                      width={45}
-                      height={45}
-                      alt="benefit"
-                    />
-                    Benefits you get from us
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Azure Cloud Migration:</strong> Seamless
-                      transition to Microsoft Azure for enhanced scalability and
-                      efficiency.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Microsoft 365 Setup:</strong> Tailored setup
-                      ensuring optimal utilization of Microsoft 365 suite
-                      features.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Data Integration:</strong> Efficient merging of
-                      diverse datasets for unified business insights.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Security and Compliance:</strong> Robust measures
-                      ensuring data security and regulatory compliance.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Custom Application Development:</strong> Tailored
-                      applications aligning with specific business requirements
-                      and goals.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> 24/7 Support:</strong> Continuous assistance and
-                      troubleshooting for uninterrupted system functionality.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Performance Optimization:</strong> Fine-tuning
-                      systems for peak performance and enhanced operational
-                      efficiency.
-                    </div>
-                  </li>
-                </ul>
+                <Fade direction="down">
+                  <ul className={styles.list_group}>
+                    <li>
+                      <Image
+                        src={BenefitImg}
+                        width={45}
+                        height={45}
+                        alt="benefit"
+                      />
+                      Benefits you get from us
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Azure Cloud Migration:</strong> Seamless
+                        transition to Microsoft Azure for enhanced scalability
+                        and efficiency.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Microsoft 365 Setup:</strong> Tailored setup
+                        ensuring optimal utilization of Microsoft 365 suite
+                        features.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Data Integration:</strong> Efficient merging of
+                        diverse datasets for unified business insights.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Security and Compliance:</strong> Robust
+                        measures ensuring data security and regulatory
+                        compliance.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Custom Application Development:</strong>{" "}
+                        Tailored applications aligning with specific business
+                        requirements and goals.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> 24/7 Support:</strong> Continuous assistance
+                        and troubleshooting for uninterrupted system
+                        functionality.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Performance Optimization:</strong> Fine-tuning
+                        systems for peak performance and enhanced operational
+                        efficiency.
+                      </div>
+                    </li>
+                  </ul>
+                </Fade>
               </div>
             </div>
           </section>
@@ -427,6 +455,7 @@ export default function CloudService() {
                 <h5 className={styles.name}>
                   AWS Migrations and Vmware Solutions
                 </h5>
+                <Fade direction="down">
                 <p className={styles.details}>
                   Our team at Turnkey Kinetics offers a comprehensive suite of
                   services to facilitate your AWS migrations and VMware
@@ -439,6 +468,7 @@ export default function CloudService() {
                   virtual machines between on-premises data centers and the
                   VMware Cloud on AWS software-defined data center (SDDC).
                 </p>
+                </Fade>
               </div>
             </div>
 
@@ -454,7 +484,7 @@ export default function CloudService() {
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
                 </p> */}
-
+  <Fade direction="down">
                 <ul className={styles.list_group}>
                   <li>
                     <Image
@@ -566,6 +596,7 @@ export default function CloudService() {
                     </div>
                   </li>
                 </ul>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 d-flex align-items-center">
@@ -583,12 +614,14 @@ export default function CloudService() {
                 <h5 className={styles.name}>
                   Turnkey Cloud Voice Services - Productivity Everywhere
                 </h5>
+                <Fade direction="down">
                 <p className={styles.details}>
                   Turnkey Kinetics Cloud Voice Services focuses on proving you
                   with efficient, cost-effective, and secure communication
                   solutions, backed by excellent customer service and the latest
                   technology innovations.
                 </p>
+                </Fade>
               </div>
             </div>
 
@@ -612,6 +645,8 @@ export default function CloudService() {
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
                 </p> */}
+
+<Fade direction="down">
                 <ul className={styles.list_group}>
                   <li>
                     <Image
@@ -720,6 +755,7 @@ export default function CloudService() {
                     </div>
                   </li>
                 </ul>
+                </Fade>
               </div>
             </div>
           </section>

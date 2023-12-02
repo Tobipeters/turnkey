@@ -38,7 +38,7 @@ export const services: IService[] = [
     ],
   },
   {
-    title: "IT Services",
+    title: "Manage IT Services",
     details:
       "Turnkey Kinetic provides Managed IT Service which integrates the monitoring of all critical resources across the network.",
     link: "/IT-service",

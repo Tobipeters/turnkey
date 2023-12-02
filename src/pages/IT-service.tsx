@@ -13,6 +13,7 @@ import ITStaffImg from "../assets/it-service/IT-staff-img.png";
 import NetworkDesignImg from "../assets/it-service/network-design-img.png";
 import TechnicalSupportImg from "../assets/it-service/Technical-support-img.png";
 import ITAdvisoryImg from "../assets/it-service/IT-advisory-img.png";
+import { Slide, Fade, Bounce } from "react-awesome-reveal";
 
 export default function ITService() {
   const subServices = [
@@ -53,7 +54,9 @@ export default function ITService() {
       >
         <div className="container h-100">
           <div className={styles.text_holder}>
-            <h2 className={styles.title}>Managed IT Services</h2>
+            <Slide direction={"left"}>
+              <h2 className={styles.title}>Managed IT Services</h2>
+            </Slide>
           </div>
         </div>
       </header>
@@ -63,24 +66,28 @@ export default function ITService() {
           <div className="row">
             <div className="col-lg-6 d-flex align-items-center">
               <div className={styles.text_holder}>
-                <p className={styles.details}>
-                  Turnkey Kinetic provides Managed IT Service which integrates
-                  the monitoring of all critical resources across the network to
-                  ensure optimum performance, and a proactive approach to
-                  mitigate potential problems in an environment before they
-                  occur. We will ensure your network runs as if it were our own,
-                  by keeping systems updated with the latest security patches,
-                  managing alterations to the network, and ensuring backup
-                  systems are performing optimally.
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    Turnkey Kinetic provides Managed IT Service which integrates
+                    the monitoring of all critical resources across the network
+                    to ensure optimum performance, and a proactive approach to
+                    mitigate potential problems in an environment before they
+                    occur. We will ensure your network runs as if it were our
+                    own, by keeping systems updated with the latest security
+                    patches, managing alterations to the network, and ensuring
+                    backup systems are performing optimally.
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6">
-              <Image
-                className="img-fluid"
-                src={ITServiceBg}
-                alt="Managed IT Services - Turnkey"
-              />
+              <Bounce>
+                <Image
+                  className="img-fluid"
+                  src={ITServiceBg}
+                  alt="Managed IT Services - Turnkey"
+                />
+              </Bounce>
             </div>
           </div>
         </div>
@@ -89,28 +96,36 @@ export default function ITService() {
       <section className={styles.about_section}>
         <div className="container">
           <div className={styles.text_holder}>
-            <h3 className={styles.title}>
-              Experience Turnkey IT Support Perks
-            </h3>
-            <p className={styles.details}>
-              Discover the advantages of our comprehensive IT support services,
-              tailored to meet your unique needs and ensure your business
-              operates at its best
-            </p>
+            <Fade direction="down">
+              <h3 className={styles.title}>
+                Experience Turnkey IT Support Perks
+              </h3>
+            </Fade>
+            <Fade direction="down">
+              <p className={styles.details}>
+                Discover the advantages of our comprehensive IT support
+                services, tailored to meet your unique needs and ensure your
+                business operates at its best
+              </p>
+            </Fade>
           </div>
 
           <div className="row d-flex justify-content-center">
             {subServices.map((sub_service: any, id: number) => (
               <div className="col-lg-4 col-md-6" key={id}>
                 <div className={styles.ser_card}>
-                  <Image
-                    src={sub_service.icon}
-                    alt={sub_service.name}
-                    className="img-fluid"
-                    width={50}
-                  />
+                  <Bounce>
+                    <Image
+                      src={sub_service.icon}
+                      alt={sub_service.name}
+                      className="img-fluid"
+                      width={50}
+                    />
+                  </Bounce>
                   <h5 className={styles.name}> {sub_service.name} </h5>
-                  <p className={styles.details}> {sub_service.value} </p>
+                  <Fade direction="down">
+                    <p className={styles.details}> {sub_service.value} </p>
+                  </Fade>
                 </div>
               </div>
             ))}
@@ -126,23 +141,25 @@ export default function ITService() {
             <div className="col-12 mb-3">
               <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>IT Advisory and Consulting</h5>
-                <p className={styles.details}>
-                  At Turnkey Kinetics, we understand that the ever-growing list
-                  of regulations poses a complex challenge for businesses.
-                  Simultaneously, they must address emerging risks, all while
-                  maintaining a delicate balance between revenue growth and
-                  cost-saving priorities.
-                  <br />
-                  In this service area, we focus on harnessing technology to
-                  drive growth and streamline operations while effectively
-                  mitigating technology-related risks.
-                  <br />
-                  When you partner with Turnkey Kinetics, you collaborate with a
-                  team that has earned the trust of boards in multinational
-                  organizations. We operate in both developed markets and the
-                  vital emerging economies of Central and Eastern Europe,
-                  Central and South America, and Asia-Pacific.
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    At Turnkey Kinetics, we understand that the ever-growing
+                    list of regulations poses a complex challenge for
+                    businesses. Simultaneously, they must address emerging
+                    risks, all while maintaining a delicate balance between
+                    revenue growth and cost-saving priorities.
+                    <br />
+                    In this service area, we focus on harnessing technology to
+                    drive growth and streamline operations while effectively
+                    mitigating technology-related risks.
+                    <br />
+                    When you partner with Turnkey Kinetics, you collaborate with
+                    a team that has earned the trust of boards in multinational
+                    organizations. We operate in both developed markets and the
+                    vital emerging economies of Central and Eastern Europe,
+                    Central and South America, and Asia-Pacific.
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-2 order-lg-1">
@@ -155,93 +172,94 @@ export default function ITService() {
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
                 </p> */}
-
-                <ul className={styles.list_group}>
-                  <li>
-                    <Image
-                      src={BenefitImg}
-                      width={45}
-                      height={45}
-                      alt="benefit"
-                    />
-                    Benefits you get from us
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong>
-                        {" "}
-                        Information Protection and Business Resilience:
-                      </strong>{" "}
-                      Safeguarding data and ensuring operational resilience for
-                      business continuity.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> IT Internal Audit:</strong> Independent
-                      evaluation of IT processes and controls for organizational
-                      compliance and effectiveness.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> IT Attestation:</strong> Third-party validation
-                      of IT controls and compliance for regulatory assurance.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong>
-                        IT Governance, Risk, and Compliance (GRC) and Controls
-                        Integration:
-                      </strong>
-                      Aligning IT processes to governance, managing risks,
-                      ensuring compliance, and integrating controls.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Information Governance Services:</strong>
-                      Strategic management of information assets to meet legal,
-                      regulatory, and business requirements.
-                    </div>
-                  </li>
-                </ul>
+                <Fade direction="down">
+                  <ul className={styles.list_group}>
+                    <li>
+                      <Image
+                        src={BenefitImg}
+                        width={45}
+                        height={45}
+                        alt="benefit"
+                      />
+                      Benefits you get from us
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong>
+                          {" "}
+                          Information Protection and Business Resilience:
+                        </strong>{" "}
+                        Safeguarding data and ensuring operational resilience
+                        for business continuity.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> IT Internal Audit:</strong> Independent
+                        evaluation of IT processes and controls for
+                        organizational compliance and effectiveness.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> IT Attestation:</strong> Third-party validation
+                        of IT controls and compliance for regulatory assurance.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong>
+                          IT Governance, Risk, and Compliance (GRC) and Controls
+                          Integration:
+                        </strong>
+                        Aligning IT processes to governance, managing risks,
+                        ensuring compliance, and integrating controls.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Information Governance Services:</strong>
+                        Strategic management of information assets to meet
+                        legal, regulatory, and business requirements.
+                      </div>
+                    </li>
+                  </ul>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 d-flex align-items-center">
@@ -257,19 +275,22 @@ export default function ITService() {
             <div className="col-12 mb-3">
               <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Proactive Technical Support</h5>
-                <p className={styles.details}>
-                  Turnkey Kinetics, we believe in making customer support a
-                  seamless and proactive experience, that empowers your
-                  customers and reduces their service time, making your
-                  organization a customer service standout.This increases
-                  loyalty and reduces customer service resources.
-                  <br />
-                  We believe that in customer service, tomorrow&apos;s questions
-                  should be answered today, well before your customers even
-                  think to ask them. Customers demand quick, efficient support,
-                  and traditional methods like call queues, call-back options,
-                  and self-service resources are no longer enough.
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    Turnkey Kinetics, we believe in making customer support a
+                    seamless and proactive experience, that empowers your
+                    customers and reduces their service time, making your
+                    organization a customer service standout.This increases
+                    loyalty and reduces customer service resources.
+                    <br />
+                    We believe that in customer service, tomorrow&apos;s
+                    questions should be answered today, well before your
+                    customers even think to ask them. Customers demand quick,
+                    efficient support, and traditional methods like call queues,
+                    call-back options, and self-service resources are no longer
+                    enough.
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
@@ -291,60 +312,62 @@ export default function ITService() {
                   nulla fermentum sapien.
                 </p> */}
 
-                <ul className={styles.list_group}>
-                  <li>
-                    <Image
-                      src={BenefitImg}
-                      width={45}
-                      height={45}
-                      alt="benefit"
-                    />
-                    Benefits you get from us
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Recorded answers to common questions:</strong>
-                      Providing information through automated messages, and
-                      answering questions before customers ask.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong>Tooltips for technical vocabulary;</strong> Using
-                      tooltips to explain complex terms in online resources,
-                      simplifying customer understanding.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Live chat for confused shoppers:</strong>
-                      Recognizing browsing patterns and offering immediate
-                      assistance when a customer is stuck in the purchase
-                      process.
-                    </div>
-                  </li>
-                </ul>
+                <Fade direction="down">
+                  <ul className={styles.list_group}>
+                    <li>
+                      <Image
+                        src={BenefitImg}
+                        width={45}
+                        height={45}
+                        alt="benefit"
+                      />
+                      Benefits you get from us
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Recorded answers to common questions:</strong>
+                        Providing information through automated messages, and
+                        answering questions before customers ask.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong>Tooltips for technical vocabulary;</strong>{" "}
+                        Using tooltips to explain complex terms in online
+                        resources, simplifying customer understanding.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Live chat for confused shoppers:</strong>
+                        Recognizing browsing patterns and offering immediate
+                        assistance when a customer is stuck in the purchase
+                        process.
+                      </div>
+                    </li>
+                  </ul>
+                </Fade>
               </div>
             </div>
           </section>
@@ -353,20 +376,22 @@ export default function ITService() {
             <div className="col-12 mb-3">
               <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>Network Design and Management</h5>
-                <p className={styles.details}>
-                  Turnkey Kinetics&apos; approach is all-encompassing. We
-                  seamlessly integrate third-party systems into your network
-                  while safeguarding your data&apos;s integrity and security. We
-                  recognize the fast-paced landscape of technology, where
-                  connectivity is not just an advantage but a necessity for
-                  sustainable growth.
-                  <br />
-                  We understand that IT networks are the backbone of your
-                  business operations, and our Network Design and Management
-                  services cover a spectrum of network complexities, from
-                  unmanaged networks to intricate Layer 2 &amp; Layer 3 routing
-                  and switching solutions.
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    Turnkey Kinetics&apos; approach is all-encompassing. We
+                    seamlessly integrate third-party systems into your network
+                    while safeguarding your data&apos;s integrity and security.
+                    We recognize the fast-paced landscape of technology, where
+                    connectivity is not just an advantage but a necessity for
+                    sustainable growth.
+                    <br />
+                    We understand that IT networks are the backbone of your
+                    business operations, and our Network Design and Management
+                    services cover a spectrum of network complexities, from
+                    unmanaged networks to intricate Layer 2 &amp; Layer 3
+                    routing and switching solutions.
+                  </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-2 order-lg-1">
@@ -379,115 +404,117 @@ export default function ITService() {
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
                 </p> */}
-
-                <ul className={styles.list_group}>
-                  <li>
-                    <Image
-                      src={BenefitImg}
-                      width={45}
-                      height={45}
-                      alt="benefit"
-                    />
-                    Benefits you get from us
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong>Comprehensive Network Design:</strong> Holistic
-                      planning for robust and efficient network infrastructure.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong>Layer 2 &amp; Layer 3 Routing:</strong> Efficient
-                      data transmission through network layers for optimal
-                      performance.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong>Integration Expertise:</strong> Seamless
-                      incorporation of diverse systems and technologies for
-                      unified functionality.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Security Optimization:</strong> Strengthening
-                      network security measures for enhanced protection against
-                      potential threats.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Data Protection:</strong> Safeguarding sensitive
-                      information from unauthorized access and potential
-                      breaches.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Network Speed Optimization:</strong> Enhancing
-                      data transfer rates and overall network performance for
-                      efficiency.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Troubleshooting &amp; Support:</strong> Swift
-                      identification and resolution of network issues, ensuring
-                      continuous operational support.
-                    </div>
-                  </li>
-                </ul>
+                <Fade direction="down">
+                  <ul className={styles.list_group}>
+                    <li>
+                      <Image
+                        src={BenefitImg}
+                        width={45}
+                        height={45}
+                        alt="benefit"
+                      />
+                      Benefits you get from us
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong>Comprehensive Network Design:</strong> Holistic
+                        planning for robust and efficient network
+                        infrastructure.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong>Layer 2 &amp; Layer 3 Routing:</strong>{" "}
+                        Efficient data transmission through network layers for
+                        optimal performance.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong>Integration Expertise:</strong> Seamless
+                        incorporation of diverse systems and technologies for
+                        unified functionality.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Security Optimization:</strong> Strengthening
+                        network security measures for enhanced protection
+                        against potential threats.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Data Protection:</strong> Safeguarding
+                        sensitive information from unauthorized access and
+                        potential breaches.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Network Speed Optimization:</strong> Enhancing
+                        data transfer rates and overall network performance for
+                        efficiency.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Troubleshooting &amp; Support:</strong> Swift
+                        identification and resolution of network issues,
+                        ensuring continuous operational support.
+                      </div>
+                    </li>
+                  </ul>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 d-flex align-items-center">
@@ -503,15 +530,17 @@ export default function ITService() {
             <div className="col-12 mb-3">
               <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>IT Staff Augmentation</h5>
-                <p className={styles.details}>
-                  Turnkey Kinetics provides exceptional staff augmentation
-                  services since the utilization of contingent workers has
-                  witnessed remarkable growth across global organizations.
-                  <br />
-                  Ensuring your organization has the IT talent and flexibility
-                  required to excel in today&apos;s dynamic business environment
-                  is what we offer
-                </p>
+                <Fade direction="down">
+                  <p className={styles.details}>
+                    Turnkey Kinetics provides exceptional staff augmentation
+                    services since the utilization of contingent workers has
+                    witnessed remarkable growth across global organizations.
+                    <br />
+                    Ensuring your organization has the IT talent and flexibility
+                    required to excel in today&apos;s dynamic business
+                    environment is what we offer
+                  </p>
+                </Fade>
               </div>
             </div>
 
@@ -533,113 +562,115 @@ export default function ITService() {
                   condimentum quis arcu. Euismod dolor dignissim ut felis vitae
                   nulla fermentum sapien.
                 </p> */}
-
-                <ul className={styles.list_group}>
-                  <li>
-                    <Image
-                      src={BenefitImg}
-                      width={45}
-                      height={45}
-                      alt="benefit"
-                    />
-                    Benefits you get from us
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Temporary IT Staffing:</strong> Short-term
-                      recruitment to meet fluctuating resource needs.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Project-Based Staffing:</strong> Specialized
-                      personnel allocation tailored to project requirements and
-                      timelines.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Contract-to-Hire:</strong> Trial period for
-                      evaluating candidates before permanent employment
-                      decisions.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> On-Site Support:</strong> In-person assistance
-                      for immediate IT issue resolution and support.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Training and Skill Development:</strong> Programs
-                      enhancing employee capabilities for improved performance.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> 24/7 Support:</strong> Round-the-clock assistance
-                      for immediate issue resolution and continuous operational
-                      support.
-                    </div>
-                  </li>
-                  <li>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={ListTickIcon}
-                      className={styles.icon}
-                      alt="list tick"
-                    />
-                    <div>
-                      <strong> Customized Solutions:</strong> Tailored IT
-                      strategies and services to meet specific business
-                      requirements.
-                    </div>
-                  </li>
-                </ul>
+                <Fade direction="down">
+                  <ul className={styles.list_group}>
+                    <li>
+                      <Image
+                        src={BenefitImg}
+                        width={45}
+                        height={45}
+                        alt="benefit"
+                      />
+                      Benefits you get from us
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Temporary IT Staffing:</strong> Short-term
+                        recruitment to meet fluctuating resource needs.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Project-Based Staffing:</strong> Specialized
+                        personnel allocation tailored to project requirements
+                        and timelines.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Contract-to-Hire:</strong> Trial period for
+                        evaluating candidates before permanent employment
+                        decisions.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> On-Site Support:</strong> In-person assistance
+                        for immediate IT issue resolution and support.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Training and Skill Development:</strong>{" "}
+                        Programs enhancing employee capabilities for improved
+                        performance.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> 24/7 Support:</strong> Round-the-clock
+                        assistance for immediate issue resolution and continuous
+                        operational support.
+                      </div>
+                    </li>
+                    <li>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={ListTickIcon}
+                        className={styles.icon}
+                        alt="list tick"
+                      />
+                      <div>
+                        <strong> Customized Solutions:</strong> Tailored IT
+                        strategies and services to meet specific business
+                        requirements.
+                      </div>
+                    </li>
+                  </ul>
+                </Fade>
               </div>
             </div>
           </section>
@@ -648,6 +679,7 @@ export default function ITService() {
             <div className="col-12 mb-3">
               <div className={`${styles.text_holder}`}>
                 <h5 className={styles.name}>IT Project Management</h5>
+                <Fade direction="down">
                 <p className={styles.details}>
                   Data security is the foundation of trust in technology. The
                   practice of safeguarding digital information from unauthorized
@@ -655,6 +687,7 @@ export default function ITService() {
                   is a holistic concept with various dimensions which our team
                   of experts at Turnkey Kinetics promises.
                 </p>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-2 order-lg-1">
@@ -668,6 +701,7 @@ export default function ITService() {
                   nulla fermentum sapien.
                 </p> */}
 
+<Fade direction="down">
                 <ul className={styles.list_group}>
                   <li>
                     <Image
@@ -793,6 +827,7 @@ export default function ITService() {
                     </div>
                   </li>
                 </ul>
+                </Fade>
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 d-flex align-items-center">
