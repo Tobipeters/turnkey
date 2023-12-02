@@ -11,6 +11,7 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
   const formRef = React.useRef<HTMLFormElement | null>(null);
 
   const handleSubmit = (event: any) => {
+    setBtnText("Loading...");
     event.preventDefault();
 
     if (formRef && formRef.current) {
