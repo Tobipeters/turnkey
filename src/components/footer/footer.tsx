@@ -56,16 +56,16 @@ export const Footer = () => {
               <ul className={styles.link_group}>
                 <li className={styles.link}>Company Info</li>
                 <li className={styles.link}>
-                  <Link href="tel:+12049523913">tel. +1 204 952 3913</Link>
+                  <Link href="tel:+12048917615">Tel. +1 204 891 7615</Link>
                 </li>
                 <li className={styles.link}>
-                  <Link href="mailto:info@turnkeyunified.com" target="_blank">
-                    Info@turnkeyunified.com
+                  <Link href="mailto:info@turnkeykinetics.com" target="_blank">
+                    Info@turnkeykinetics.ca
                   </Link>
                 </li>
                 <li className={styles.link}>
-                  <Link href="https://www.turnkeyunified.com">
-                    www.turnkeyunified.com
+                  <Link href="https://www.turnkeykinetics.ca">
+                    www.turnkeykinetics.ca
                   </Link>
                 </li>
               </ul>
@@ -75,8 +75,8 @@ export const Footer = () => {
               <ul className={styles.link_group}>
                 <li className={styles.link}>Find us at</li>
                 <li className={styles.link}>Winnipeg Office</li>
-                <li className={styles.link}>1515, Warde Avenue, </li>
-                <li className={styles.link}>Winnipeg</li>
+                <li className={styles.link}>50 Sage Creek Boulevard, </li>
+                <li className={styles.link}>Winnipeg, MB, R3X 0J6, Canada</li>
               </ul>
             </div>
           </div>
@@ -84,22 +84,22 @@ export const Footer = () => {
 
         <div className={styles.bottom_notes}>
           <div className={styles.copy_right}>
-            Copyright Turnkey@{new Date().getFullYear()} all right reserved
+            Copyright Turnkey Kinetics@{new Date().getFullYear()} all right reserved
           </div>
 
           <div className={styles.icon_container}>
-            <div className={styles.icon_holder}>
+            <a href="https://www.facebook.com/Turnkeykinetics" target="_blank" className={styles.icon_holder}>
               <FbIcon />
-            </div>
-            <div className={styles.icon_holder}>
+            </a>
+            <a href="https://www.linkedin.com/company/turnkeykinetics" target="_blank" className={styles.icon_holder}>
               <LinkedInIcon />
-            </div>
-            <div className={styles.icon_holder}>
+            </a>
+            <a href="https://www.instagram.com/turnkeykinetics" target="_blank" className={styles.icon_holder}>
               <IGIcon />
-            </div>
-            <div className={styles.icon_holder}>
+            </a>
+            <a href="https://twitter.com/TurnkeyKinetics" target="_blank" className={styles.icon_holder}>
               <TwitterIcon />
-            </div>
+            </a>
           </div>
         </div>
       </div>
