@@ -28,6 +28,27 @@
   text-transform: capitalize;
 }
 
+.client_card_container .brand_holder {
+  display: flex;
+  gap: 0 1rem;
+  align-items: center;
+  margin-top: 4.5rem;
+}
+
+.client_card_container .brand_holder img {
+  border-radius: 50%;
+}
+
+.client_card_container .brand_holder .content .name {
+  color: #2d2d2d;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.client_card_container .brand_holder .content .position {
+}
+
 @media screen and (max-width: 991px) {
   .client_card_container {
     padding: 1.25rem;

@@ -138,7 +138,7 @@ export const goals: IGoal[] = [
   {
     title: "24/7 Support",
     details:
-      "Highlight your around-the-clock support, emphasizing that clients can reach out for assistance at any time, ensuring minimal downtime",
+      "Highlighting your around-the-clock support, emphasizing that clients can reach out for assistance at any time, ensuring minimal downtime",
     icon: SupportImg,
   },
 ];
