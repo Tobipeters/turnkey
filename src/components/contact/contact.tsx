@@ -146,7 +146,7 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
             <div className="col-lg-6">
               <iframe
                 className="address_map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.0444318735213!2d-97.0621687!3d49.8228301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea77c712ee4f29%3A0x41e65e0133bd7e24!2s1515%20Warde%20Ave%2C%20Winnipeg%2C%20MB%20R3X%202H5%2C%20Canada!5e0!3m2!1sen!2sng!4v1699007641630!5m2!1sen!2sng"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.480453618222!2d-97.04899982360615!3d49.83342933159851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea77ae44b4121f%3A0x5f0f3f3f3478fb6e!2s50%20Sage%20Creek%20Blvd%2C%20Winnipeg%2C%20MB%20R3X%200J3%2C%20Canada!5e0!3m2!1sen!2sng!4v1702370629179!5m2!1sen!2sng"
                 width={550}
                 height={400}
                 style={{
@@ -163,23 +163,23 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
                 <h6 className={styles.name}>Find us at</h6>
                 <address className={styles.value}>
                   Winnipeg Office <br />
-                  1515, Warde Avenue,
+                  50 Sage Creek Boulevard,
                   <br />
-                  Winnipeg, Canada
+                  Winnipeg, MB, R3X 0J6, Canada
                 </address>
               </div>
 
               <div className={styles.info_container}>
                 <h6 className={styles.name}>Company Info</h6>
-                <Link className={styles.value} href="tel:+12049523913">
-                  tel. +1 204 952 3913
+                <Link className={styles.value} href="tel:+12048917615">
+                  Tel. +1 204 891 7615
                 </Link>
                 <br />
                 <Link
-                  href="https://www.turnkeyunified.com"
+                  href="https://www.turnkeykinetics.ca"
                   className={styles.value}
                 >
-                  www.turnkeyunified.com
+                  www.turnkeykinetics.ca
                 </Link>
               </div>
             </div>
@@ -189,6 +189,16 @@ export const Contact: React.FC<IProps> = ({ isBanner = true }) => {
     </section>
   );
 };
+Contact;
+
+// Phone : +1 204 891 7615
+// Email :
+// Web: turnkeykinetics.ca
+
+// Address
+
+// 50 Sage Creek Boulevard,
+// Winnipeg, MB, R3X 0J6
 
 interface IProps {
   isBanner?: boolean;

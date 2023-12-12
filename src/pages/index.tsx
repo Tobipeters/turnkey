@@ -28,9 +28,9 @@ export default function Home() {
     <>
       <Seo
         title="Turnkey Kinetics Services | Elevate Your Business with Expert IT Advisory, Unparalleled IT Services and Cybersecurity"
-        description=" Turnkey Kinetics Service LLC is a Manitoba based managed service provider determined to redefine the delivery of IT services to all our clientele. We believe in generating success collaboratively, developing long-term strategic success, and building trust for the next challenge With you as our partner."
+        description=" Turnkey Kinetics Service LLC is a Canada based managed service provider determined to redefine the delivery of IT services to all our clientele. We believe in generating success collaboratively, developing long-term strategic success, and building trust for the next challenge With you as our partner."
         image="/og-images/turnkey-kinetics-services-logo.png"
-        keywords="Turnkey, Service, IT, Advisory, Cybersecurity, Hardware, Manitoba, Canada, Cloud, E-waste, Support"
+        keywords="Turnkey, Service, IT, Advisory, Cybersecurity, Hardware, Winnipeg, Manitoba, Canada, Cloud, E-waste, Support"
       />
 
       <main className={`${styles.main} ${outfit.className}`}>
@@ -82,7 +82,7 @@ export default function Home() {
                       About <span>Turnkey</span>
                     </h3>
                     <div className={styles.details}>
-                      Turnkey Kinetics Service LLC is a Manitoba based managed
+                      Turnkey Kinetics Service LLC is a Canada based managed
                       service provider determined to redefine the delivery of IT
                       services to all our clientele. We believe in generating
                       success collaboratively, developing long-term strategic
@@ -122,7 +122,7 @@ export default function Home() {
 
         <section className={styles.goal_section}>
           <div className="container">
-            <h3 className={styles.title}>We are here to help you be secure</h3>
+            <h3 className={styles.title}>We are here to help you to be secure</h3>
 
             <div className="row d-flex justify-content-center">
               {goals.map((goal: IGoal, index: number) => (
