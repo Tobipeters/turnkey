@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev -p 9000",
-    "start": "next start -p 9000",
+    "build": "node api.js && next build",
+    "dev": "node api.js && next dev -p 9000",
+    "start": "node api.js && next start -p 9000",
     "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "bootstrap": "^5.3.2",
-    "next": "13.5.4",
+    "next": "16.3.4",
     "react": "^18",
     "react-awesome-reveal": "^4.2.7",
     "react-dom": "^18"
